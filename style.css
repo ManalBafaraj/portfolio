@@ -1576,6 +1576,45 @@ html[dir="ltr"] .timeline-item::before {
 }
 
 @media (min-width: 981px) {
+  .hero {
+    min-height: calc(100vh - 92px);
+    grid-template-columns: minmax(0, 0.98fr) minmax(340px, 0.92fr);
+    gap: clamp(24px, 4vw, 54px);
+    align-items: center;
+    padding: clamp(6px, 1.8vw, 24px) 0 clamp(24px, 3vw, 44px);
+  }
+
+  h1 {
+    font-size: clamp(3rem, 5vw, 5.2rem);
+    line-height: 1.06;
+    margin-bottom: 16px;
+  }
+
+  .hero-lead {
+    max-width: 620px;
+    font-size: clamp(0.98rem, 1.35vw, 1.12rem);
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+  }
+
+  .work-collage {
+    min-height: clamp(390px, 46vw, 470px);
+    border-radius: 22px;
+  }
+
+  .hero-showcase {
+    gap: 12px;
+  }
+
+  .hero-signal-row span {
+    min-height: 34px;
+    padding: 6px 12px;
+  }
+}
+
+@media (min-width: 981px) {
   .project-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
