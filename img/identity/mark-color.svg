@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Manal Bafaraj — Idea in Motion</title>
+  <desc id="desc">Four distinct crafted forms gather around a central idea spark, representing discovery, design, engineering and a useful product.</desc>
+  <path class="identity-unit identity-unit-1" fill="#3C1D55" d="M31 8H18C11.93 8 7 12.93 7 19v12h10c7.73 0 14-6.27 14-14V8Z"/>
+  <path class="identity-unit identity-unit-2" fill="#C84C7A" d="M36 8h10.4L57 18.6V31h-9c-7.18 0-13-5.82-13-13V8h1Z"/>
+  <path class="identity-unit identity-unit-3" fill="#6A3A91" d="M57 35v11c0 6.07-4.93 11-11 11H35v-9c0-7.18 5.82-13 13-13h9Z"/>
+  <path class="identity-unit identity-unit-4" fill="#A875B5" d="M31 57H18C11.93 57 7 52.07 7 46V35h9c8.28 0 15 6.72 15 15v7Z"/>
+  <path fill="#FFF8FB" d="M27.3 27.3h9.4v9.4h-9.4z" transform="rotate(45 32 32)"/>
+  <circle class="identity-spark" cx="32" cy="32" r="3.15" fill="#EFBC63"/>
+
+  <style>
+    .identity-unit { animation: identity-enter 350ms cubic-bezier(.22,.7,.3,1) both; }
+    .identity-unit-1 { --entry-x:-2px; --entry-y:-1px; animation-delay:0ms; }
+    .identity-unit-2 { --entry-x:2px; --entry-y:-1px; animation-delay:100ms; }
+    .identity-unit-3 { --entry-x:1px; --entry-y:2px; animation-delay:200ms; }
+    .identity-unit-4 { --entry-x:-2px; --entry-y:1px; animation-delay:300ms; }
+    .identity-spark { transform-box:fill-box; transform-origin:center; animation:identity-spark 200ms 650ms ease-out both; }
+    @keyframes identity-enter { from { opacity:0; transform:translate(var(--entry-x),var(--entry-y)); } to { opacity:1; transform:none; } }
+    @keyframes identity-spark { from { opacity:0; transform:scale(.85); } to { opacity:1; transform:scale(1); } }
+    @media (prefers-reduced-motion:reduce) { .identity-unit,.identity-spark { animation:none; opacity:1; transform:none; } }
+  </style>
+</svg>

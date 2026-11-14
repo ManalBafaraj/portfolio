@@ -1,0 +1,25 @@
+# Local reviews, tooling, and editor state must never enter the published repository.
+/review/
+/screenshots/
+/test/
+/tests/
+/qa/
+/.agents/
+/.vscode/
+__pycache__/
+*.test.*
+*.spec.*
+verify-*.cjs
+check-*.py
+
+# Archives, credentials, private resumes, and temporary files.
+*.zip
+*.ZIP
+*CV*.pdf
+*cv*.pdf
+.env
+.env.*
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

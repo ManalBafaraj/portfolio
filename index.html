@@ -1,309 +1,1013 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Manal, a full-stack developer and UI/UX designer." />
-  <title>Manal | Software Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="shine-layer" aria-hidden="true"></div>
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="البورتفوليو الشخصي لمنال بافرج، مهندسة برمجيات Full‑Stack تجمع الواجهات والخلفيات وتجربة المستخدم. أبني بعناية، من الفكرة إلى الأثر." name="description"/>
 
+  <link href="img/identity/favicon-32.png" rel="icon" type="image/png" sizes="32x32"/>
+  <link href="img/identity/favicon-16.png" rel="icon" type="image/png" sizes="16x16"/>
+  <link href="img/favicon.svg" rel="icon" type="image/svg+xml" sizes="any"/>
+  <link href="img/identity/favicon-180.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="https://manalbafaraj.github.io/portfolio/" rel="canonical"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Manal Bafaraj | Full-Stack Software Engineer"/>
+  <meta property="og:site_name" content="Manal Bafaraj — Portfolio"/>
+  <meta property="og:url" content="https://manalbafaraj.github.io/portfolio/"/>
+  <meta property="og:description" content="البورتفوليو الشخصي لمنال بافرج، مهندسة برمجيات Full‑Stack تجمع الواجهات والخلفيات وتجربة المستخدم. أبني بعناية، من الفكرة إلى الأثر."/>
+  <meta property="og:locale" content="ar_SA"/>
+  <meta property="og:locale:alternate" content="en_US"/>
+  <meta property="og:image" content="https://manalbafaraj.github.io/portfolio/img/identity/portfolio-og.png"/>
+  <meta property="og:image:type" content="image/png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="منال بافرج — هوية Idea in Motion وعبارة أبني بعناية، من الفكرة إلى الأثر."/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Manal Bafaraj | Full-Stack Software Engineer"/>
+  <meta name="twitter:description" content="البورتفوليو الشخصي لمنال بافرج، مهندسة برمجيات Full‑Stack تجمع الواجهات والخلفيات وتجربة المستخدم. أبني بعناية، من الفكرة إلى الأثر."/>
+  <meta name="twitter:image" content="https://manalbafaraj.github.io/portfolio/img/identity/portfolio-og.png"/>
+  <meta name="twitter:image:alt" content="منال بافرج — هوية Idea in Motion وعبارة أبني بعناية، من الفكرة إلى الأثر."/>
+
+  <title>
+   Manal Bafaraj | Full-Stack Software Engineer
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" data-i18n="skip" href="#main">
+   انتقل إلى المحتوى
+  </a>
   <header class="site-header" id="top">
-    <nav class="nav-shell" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Manal home">
-        <span class="brand-mark">M</span>
-        <span>Manal</span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <div class="nav-panel" id="navPanel">
-        <a href="#about" data-i18n="nav.about">عنّي</a>
-        <a href="#experience" data-i18n="nav.experience">الخبرة</a>
-        <a href="#featured" data-i18n="nav.featured">مشروع مميز</a>
-        <a href="#projects" data-i18n="nav.projects">المشاريع</a>
-        <a href="#identity" data-i18n="nav.identity">الأدوات</a>
-        <a href="#contact" data-i18n="nav.contact">تواصل</a>
-        <button class="language-button" id="langToggle" type="button" aria-label="Switch language">EN</button>
-      </div>
-    </nav>
+   <nav aria-label="التنقل الرئيسي" class="nav-shell" data-i18n-aria="nav.label">
+    <a aria-label="Manal Bafaraj home" class="brand" href="#top">
+     <span class="brand-mark">
+      <img src="img/identity/mark-color.svg" width="44" height="44" alt="" aria-hidden="true" decoding="async"/>
+     </span>
+     <span class="brand-name">
+      Manal Bafaraj
+     </span>
+    </a>
+    <button aria-controls="navPanel" aria-expanded="false" aria-label="افتح قائمة التنقل" class="nav-toggle" id="navToggle" type="button">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </button>
+    <div class="nav-panel" id="navPanel">
+     <a data-i18n="nav.about" href="#about">
+      عنّي
+     </a>
+     <a data-i18n="nav.experience" href="#experience">
+      سجل البناء
+     </a>
+     <a data-i18n="nav.featured" href="#featured">
+      أعمال مختارة
+     </a>
+     <a data-i18n="nav.projects" href="#projects">
+      المشاريع
+     </a>
+     <a data-i18n="nav.identity" href="#identity">
+      الأدوات
+     </a>
+     <a data-i18n="nav.contact" href="#contact">
+      تواصل
+     </a>
+     <button aria-label="التبديل إلى الإنجليزية" class="language-button" id="langToggle" type="button">
+      EN
+     </button>
+    </div>
+   </nav>
   </header>
-
-  <main>
-    <section class="hero section-grid" aria-labelledby="heroTitle">
-      <div class="hero-copy reveal">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Full-Stack Developer & UI/UX Designer</p>
-        <h1 id="heroTitle" data-i18n="hero.title">أبني منتجات رقمية تحل مشكلات حقيقية، من الفكرة إلى الإطلاق.</h1>
-        <p class="hero-lead" data-i18n="hero.lead">
-          أنا منال، مطوّرة Full-Stack ومصمّمة واجهات أركز على بناء منتجات رقمية متكاملة. أعمل على تحويل الأفكار إلى أنظمة وتطبيقات عملية من خلال تجربة مستخدم واضحة وتطوير قابل للتوسع.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#featured" data-i18n="hero.primary">استعرض أعمالي</a>
-        </div>
+  <main id="main" tabindex="-1">
+   <section aria-labelledby="heroTitle" class="hero section-grid">
+    <div class="hero-copy">
+     <p class="notebook-title" data-i18n="notebook.title">
+      دفتر بناء المنتجات
+     </p>
+     <p class="hero-hello" data-i18n="hero.hello">
+      مرحبًا، أنا منال 👋
+     </p>
+     <p class="eyebrow" data-i18n="hero.eyebrow">
+      مهندسة برمجيات Full‑Stack
+     </p>
+     <h1 data-i18n="hero.title" id="heroTitle">
+      أبني منتجات رقمية واضحة، من الفكرة إلى الإطلاق.
+     </h1>
+     <p class="hero-lead" data-i18n="hero.lead">
+      أجمع بين تطوير الواجهات والـBackend وتصميم تجربة المستخدم لبناء منتجات متكاملة وسهلة الاستخدام.
+     </p>
+     <div class="hero-actions">
+      <a class="button primary" data-i18n="hero.primary" href="#featured">
+       استعرض أعمالي
+      </a>
+      <a class="button secondary" data-i18n="hero.secondary" href="#contact">
+       تواصل معي
+      </a>
+      <a class="text-link" href="https://github.com/ManalBafaraj" rel="noopener noreferrer" target="_blank">
+       GitHub ↗
+      </a>
+     </div>
+     <div class="availability">
+      <p data-i18n="hero.available">
+       متاحة لفرص في هندسة البرمجيات
+      </p>
+     </div>
+    </div>
+    <div class="hero-showcase">
+     <span class="showcase-caption" data-i18n="notebook.stamp">
+      أعمال مختارة · من دفتر منال
+     </span>
+     <svg aria-hidden="true" class="sketch-connector" fill="none" viewBox="0 0 500 440">
+      <path d="M40 80C-5 12 250 10 300 45S520 270 444 343Q410 370 375 355" stroke="currentColor" stroke-dasharray="3 8" stroke-width="1.5">
+      </path>
+      <path d="m384 344-12 12 17 3M30 63l4-15m-12 8 19-2M440 110l5-12 5 12 13 4-13 4-5 12-5-12-13-4z" stroke="currentColor" stroke-width="1.5">
+      </path>
+     </svg>
+     <a class="hero-preview taskflow-preview" href="#taskflow">
+      <span class="window-caption">
+       <span aria-hidden="true" class="window-dots">
+        ● ● ●
+       </span>
+       TaskFlow / 01
+      </span>
+      <img alt="لوحة TaskFlow للمهام والأولويات على الحاسوب" class="" data-i18n-alt="alt.taskflow" decoding="async" height="900" src="img/taskflow-desktop.webp" width="1440"/>
+     </a>
+     <a class="hero-preview saden-preview" href="#saden">
+      <span class="window-caption">
+       Saden / 02
+      </span>
+      <img alt="لوحة سادن لإدارة بيانات الدراسات الميدانية" class="" data-i18n-alt="alt.saden" decoding="async" height="634" src="img/saden-dashboard.webp" width="1200"/>
+     </a>
+     <span class="hero-stamp">
+      <span data-i18n="hero.signatureFirst">أبني بعناية،</span>
+      <span data-i18n="hero.signatureSecond">من الفكرة إلى الأثر.</span>
+     </span>
+    </div>
+   </section>
+   <div class="notebook-process">
+    <span class="process-label" data-i18n="notebook.note">
+     ملاحظات من التصميم إلى التنفيذ
+    </span>
+    <ol>
+     <li>
+      <span aria-hidden="true" class="process-index">
+       01
+      </span>
+      <span data-i18n="notebook.idea">
+       فهم الفكرة
+      </span>
+     </li>
+     <li>
+      <span aria-hidden="true" class="process-index">
+       02
+      </span>
+      <span data-i18n="notebook.build">
+       تصميم وبناء
+      </span>
+     </li>
+     <li>
+      <span aria-hidden="true" class="process-index">
+       03
+      </span>
+      <span data-i18n="notebook.ship">
+       اختبار وإطلاق
+      </span>
+     </li>
+    </ol>
+    <span aria-hidden="true" class="process-scribble">
+     ↳
+    </span>
+   </div>
+   <section aria-labelledby="aboutTitle" class="section-block notebook-about" id="about">
+    <div class="section-heading reveal">
+     <p class="eyebrow" data-i18n="about.eyebrow">
+      عنّي
+     </p>
+     <h2 data-i18n="about.title" id="aboutTitle">
+      أفهم المشكلة، ثم أبني الحل.
+     </h2>
+    </div>
+    <div class="about-layout reveal">
+     <p data-i18n="about.body">
+      أؤمن أن نجاح أي منتج يبدأ بفهم المشكلة قبل كتابة أول سطر برمجي. لذلك أركز على بناء حلول عملية تجمع بين تجربة مستخدم واضحة، وبنية تقنية منظمة، وقابلية للتطوير والتوسع على المدى الطويل.
+     </p>
+     <div aria-label="Working principles" class="principles" data-i18n-aria="about.principles">
+      <div>
+       <span>
+        01
+       </span>
+       <strong data-i18n="about.p1Title">
+        فهم المشكلة أولاً
+       </strong>
+       <p data-i18n="about.p1">
+        كل منتج ناجح يبدأ بفهم احتياجات المستخدم وتحديد المشكلة الحقيقية قبل التفكير في الحل.
+       </p>
       </div>
-
-      <div class="hero-showcase reveal" aria-label="Selected project previews">
-        <div class="work-collage">
-          <article class="work-window main-window">
-            <img src="img/saden-dashboard-laptop.png.png" alt="Saden dashboard preview">
-          </article>
-          <article class="work-window tall-window">
-            <img src="img/gosport-mobile-plan.png.png" alt="GoSport mobile plan preview">
-          </article>
-          <article class="work-window small-window top-window">
-            <img src="img/animego-home-laptop.png.png" alt="AnimeGo project preview">
-          </article>
-          <article class="work-window small-window bottom-window">
-            <img src="img/exam-question-laptop.png.png" alt="Exam system preview">
-          </article>
-          <div class="floating-stack" aria-hidden="true">
-            <div>UI/UX</div>
-            <div>Dashboards</div>
-            <div>Web Apps</div>
-          </div>
-        </div>
-        <div class="hero-signal-row" aria-label="Core work areas">
-          <span>UI/UX</span>
-          <span>APIs</span>
-          <span>Data</span>
-          <span>Dashboards</span>
-        </div>
+      <div>
+       <span>
+        02
+       </span>
+       <strong data-i18n="about.p2Title">
+        تحويل الأفكار إلى منتجات
+       </strong>
+       <p data-i18n="about.p2">
+        أحوّل الأفكار والمتطلبات إلى منتجات رقمية عملية تقدم قيمة واضحة وتجربة استخدام فعالة.
+       </p>
       </div>
-    </section>
-
-    <section class="section-block" id="about" aria-labelledby="aboutTitle">
-      <div class="section-heading reveal">
-        <p class="eyebrow" data-i18n="about.eyebrow">عنّي</p>
-        <h2 id="aboutTitle" data-i18n="about.title">أبني منتجات رقمية تحل المشكلات وتحقق الأهداف، لا مجرد واجهات جميلة.</h2>
+      <div>
+       <span>
+        03
+       </span>
+       <strong data-i18n="about.p3Title">
+        بناء أنظمة قابلة للتوسع
+       </strong>
+       <p data-i18n="about.p3">
+        أطوّر أنظمة منظمة وقابلة للنمو تضمن سهولة الصيانة والتطوير مع تطور المنتج مستقبلاً.
+       </p>
       </div>
-      <div class="about-layout reveal">
-        <p data-i18n="about.body">
-          أؤمن أن نجاح أي منتج يبدأ بفهم المشكلة قبل كتابة أول سطر برمجي. لذلك أركز على بناء حلول عملية تجمع بين تجربة مستخدم واضحة، وبنية تقنية منظمة، وقابلية للتطوير والتوسع على المدى الطويل.
-        </p>
-        <div class="principles" aria-label="Working principles">
-          <div>
-            <span>01</span>
-            <strong data-i18n="about.p1Title">فهم المشكلة أولاً</strong>
-            <p data-i18n="about.p1">كل منتج ناجح يبدأ بفهم احتياجات المستخدم وتحديد المشكلة الحقيقية قبل التفكير في الحل.</p>
-          </div>
-          <div>
-            <span>02</span>
-            <strong data-i18n="about.p2Title">تحويل الأفكار إلى منتجات</strong>
-            <p data-i18n="about.p2">أحوّل الأفكار والمتطلبات إلى منتجات رقمية عملية تقدم قيمة واضحة وتجربة استخدام فعالة.</p>
-          </div>
-          <div>
-            <span>03</span>
-            <strong data-i18n="about.p3Title">بناء أنظمة قابلة للتوسع</strong>
-            <p data-i18n="about.p3">أطوّر أنظمة منظمة وقابلة للنمو تضمن سهولة الصيانة والتطوير مع تطور المنتج مستقبلاً.</p>
-          </div>
-        </div>
+     </div>
+    </div>
+   </section>
+   <section aria-labelledby="experienceTitle" class="section-block build-log-section" id="experience">
+    <div class="section-heading reveal">
+     <p class="eyebrow" data-i18n="experience.eyebrow">
+      02 / الخبرات والتدريب
+     </p>
+     <h2 data-i18n="experience.title" id="experienceTitle">
+      سجل البناء
+     </h2>
+     <p class="section-intro" data-i18n="log.intro">
+      ما بنيته، وما تعلّمته في الطريق.
+     </p>
+    </div>
+    <div class="build-notebook">
+     <article class="log-entry log-primary">
+      <div class="log-margin">
+       <span aria-hidden="true" class="entry-number">
+        01
+       </span>
+       <time data-i18n="log.approDate">
+        أكتوبر — نوفمبر 2026
+       </time>
+       <span class="entry-label" data-i18n="log.main">
+        سجل تطوير
+       </span>
       </div>
-    </section>
-
-    <section class="section-block timeline-section" id="experience" aria-labelledby="experienceTitle">
-      <div class="section-heading reveal">
-        <p class="eyebrow" data-i18n="experience.eyebrow">الخبرات والتدريب</p>
-        <h2 id="experienceTitle" data-i18n="experience.title">محطات صنعت طريقتي في بناء المنتجات.</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <time data-i18n="experience.tamheerDate">Oct 2025 – Apr 2026</time>
-          <div>
-            <h3 data-i18n="experience.tamheerTitle">Software Engineer Trainee (Tamheer Program)</h3>
-            <p class="timeline-company" data-i18n="experience.tamheerCompany">Institute of Hajj and Umrah Research – Umm Al-Qura University</p>
-            <p data-i18n="experience.tamheerText">عملت على تطوير أنظمة وحلول رقمية متكاملة، شملت تطوير الواجهات والـBackend وقواعد البيانات، والمشاركة في بناء منصة سادن لجمع وإدارة بيانات الدراسات الميدانية، بالإضافة إلى الاختبار وتحسين الأداء وتجربة المستخدم.</p>
-          </div>
-        </article>
-        <article class="timeline-item reveal">
-          <time data-i18n="experience.uiuxDate">Jul 2025 – Oct 2025</time>
-          <div>
-            <h3 data-i18n="experience.uiuxTitle">Advanced UI/UX Design Bootcamp</h3>
-            <p class="timeline-company" data-i18n="experience.uiuxCompany">Newtech Technical Challenge</p>
-            <p data-i18n="experience.uiuxText">تدريب مكثف في تصميم تجربة وواجهة المستخدم، شمل UX Research، تصميم الواجهات، بناء النماذج الأولية وتطبيق منهجيات التصميم المتمحور حول المستخدم.</p>
-          </div>
-        </article>
-        <article class="timeline-item reveal">
-          <time data-i18n="experience.fullstackDate">Jun 2025 – Sep 2025</time>
-          <div>
-            <h3 data-i18n="experience.fullstackTitle">Full Stack Web Development Bootcamp</h3>
-            <p class="timeline-company" data-i18n="experience.fullstackCompany">Al-Khobar Experts Training Institute</p>
-            <p data-i18n="experience.fullstackText">تدريب عملي مكثف في تطوير الويب Full-Stack، شمل بناء واجهات متجاوبة باستخدام HTML وCSS وJavaScript وBootstrap وتطوير مشاريع تطبيقية.</p>
-          </div>
-        </article>
-        <article class="timeline-item reveal">
-          <time data-i18n="experience.digitalDate">Jul 2024 – Aug 2024</time>
-          <div>
-            <h3 data-i18n="experience.digitalTitle">Software Engineer Intern (Full-Stack)</h3>
-            <p class="timeline-company" data-i18n="experience.digitalCompany">Digital Upgrade ME</p>
-            <p data-i18n="experience.digitalText">ساهمت في تطوير واختبار تطبيقات ويب باستخدام HTML وCSS وJavaScript وPython وPHP، والعمل على الواجهات والـBackend، مع استخدام Git وGitHub والعمل ضمن بيئة Agile.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block featured-section" id="featured" aria-labelledby="featuredTitle">
-      <div class="section-heading reveal">
-        <p class="eyebrow" data-i18n="featured.eyebrow">مشروع مميز</p>
-        <h2 id="featuredTitle" data-i18n="featured.title">سادن — منصة ذكية لإدارة البيانات والاستبيانات والفرق الميدانية.</h2>
-      </div>
-      <article class="featured-project reveal">
-        <div class="project-media saden-media">
-          <div class="saden-carousel" aria-label="Saden interface previews">
-            <img src="img/posterSaden.jpg" alt="Saden project poster" />
-            <img src="img/sadenDashboard.png" alt="Saden dashboard interface" />
-            <img src="img/sadenLocation.png" alt="Saden location analytics interface" />
-          </div>
-        </div>
-        <div class="project-content">
-          <div class="project-header">
-            <img class="project-logo" src="img/sadenLogo.png" alt="Saden logo" />
-            <div class="project-client">
-              <span class="client-kicker" data-i18n="featured.clientKicker">تم تطويره لصالح</span>
-              <span class="client-name" data-i18n="featured.clientName">معهد خادم الحرمين الشريفين لأبحاث الحج والعمرة</span>
-            </div>
-          </div>
-          <span class="project-label" data-i18n="featured.label">تم استخدامه ميدانيًا بنجاح · موسم الحج 2026</span>
-          <p data-i18n="featured.description">
-            منصة موسمية مكتملة لجمع وإدارة بيانات الدراسات الميدانية، تتيح إنشاء الاستبيانات، إدارة الفرق، متابعة مواقع الراصدين، وتحليل البيانات من خلال لوحة تحكم مركزية. تم تشغيل النظام واستخدامه فعليًا خلال موسم الحج بنجاح.
-          </p>
-          <div class="featured-metrics" aria-label="Saden impact metrics">
-            <div>
-              <strong>316</strong>
-              <span data-i18n="featured.metricObservers">راصدًا نشطًا</span>
-            </div>
-            <div>
-              <strong>20,000</strong>
-              <span data-i18n="featured.metricSurveys">+ استجابة تم تسجيلها</span>
-            </div>
-          </div>
-          <div class="impact-list">
-            <span>NestJS</span>
-            <span>PostgreSQL</span>
-            <span>Flutter</span>
-            <span>RBAC</span>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="section-block" id="projects" aria-labelledby="projectsTitle">
-      <div class="section-heading reveal">
-        <p class="eyebrow" data-i18n="projects.eyebrow">مشاريع أخرى</p>
-        <h2 id="projectsTitle" data-i18n="projects.title">مشاريع تعكس أسلوبي في حل المشكلات وبناء المنتجات.</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project-card research-card reveal">
-          <img src="img/Emotion_no_bg.png" alt="Speech Emotion Classification preview" />
-          <div>
-            <span class="project-type" data-i18n="projects.aiType">AI Research</span>
-            <h3 data-i18n="projects.emotionTitle">Speech Emotion Classification</h3>
-            <p data-i18n="projects.emotionText">بحث لتصنيف المشاعر من الصوت باستخدام Machine Learning ونماذج CNN وتحليل الخصائص الصوتية على مجموعة بيانات CREMA-D.</p>
-            <p class="research-meta" data-i18n="projects.emotionTech">CNN · MFCC · Spectrogram · CREMA-D</p>
-            <p class="research-result" data-i18n="projects.emotionAccuracy">96.9% Average Accuracy</p>
-            <a class="project-link" href="assets/documents/Speech_Emotion_Classification.pdf" target="_blank" rel="noopener noreferrer" data-i18n="projects.paper">عرض الورقة البحثية</a>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <img src="img/BruteForce.jpg" alt="Brute Force Dashboard preview" />
-          <div>
-            <span class="project-type" data-i18n="projects.bruteType">Data dashboard</span>
-            <h3 data-i18n="projects.bruteTitle">Brute Force Dashboard</h3>
-            <p data-i18n="projects.bruteText">لوحة تفاعلية لتحليل محاولات تسجيل الدخول وكشف أنماط الهجمات بصريًا.</p>
-            <a class="project-link" href="https://brute-force-dashboard-dmvtp8jvnhwctbwhb8hdan.streamlit.app/" target="_blank" rel="noopener noreferrer" data-i18n="projects.live">زيارة المشروع</a>
-            <a class="project-link" href="https://github.com/ManalBafaraj/brute-force-dashboard/tree/main" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <img src="img/exam-start-laptop.png.png" alt="Exam Management System preview" />
-          <div>
-            <span class="project-type" data-i18n="projects.examType">Web platform</span>
-            <h3 data-i18n="projects.examTitle">Exam Management System</h3>
-            <p data-i18n="projects.examText">منصة اختبارات إلكترونية للطلاب والمشرفين، مع اختبارات مؤقتة ولوحة إدارة.</p>
-            <a class="project-link" href="https://github.com/ManalBafaraj/Exam-Management-System" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <img src="img/animego-list-laptop.png.png" alt="AnimeGo web app preview" />
-          <div>
-            <span class="project-type" data-i18n="projects.animeType">Web interface</span>
-            <h3 data-i18n="projects.animeTitle">AnimeGo</h3>
-            <p data-i18n="projects.animeText">واجهة ويب لعرض أعمال الأنمي بتجربة تصفح منظمة وبصرية.</p>
-            <a class="project-link" href="https://github.com/ManalBafaraj/AnimeGo-Website" target="_blank" rel="noopener noreferrer" data-i18n="projects.github">GitHub</a>
-          </div>
-        </article>
-        <article class="project-card gosport-card reveal">
-          <img src="img/go_sport(2).png" alt="GoSport UI UX design preview" />
-          <div>
-            <span class="project-type" data-i18n="projects.designType">UI/UX</span>
-            <h3 data-i18n="projects.gosportTitle">GoSport</h3>
-            <p data-i18n="projects.gosportText">تصميم تجربة تطبيق يساعد المستخدمين على إيجاد الأنشطة والمراكز الرياضية بسهولة.</p>
-            <a class="project-link" href="https://www.figma.com/proto/WqMyAoa779XMphWz7PuU4P/Go-Sport?page-id=135%3A217&node-id=695-2043&viewport=-162%2C-636%2C0.3&t=XCF8l6p7ZtDINCiP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=695%3A1815&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer" data-i18n="projects.prototype">Figma prototype</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block identity-section" id="identity" aria-labelledby="identityTitle">
-      <div class="section-heading reveal">
-        <p class="eyebrow" data-i18n="identity.eyebrow">أدواتي التقنية</p>
-        <h2 id="identityTitle" data-i18n="identity.title">الأدوات والمنهجيات التي أعتمد عليها لبناء منتجات رقمية متكاملة.</h2>
-      </div>
-      <div class="identity-panel reveal">
-        <div class="identity-steps">
-          <span data-i18n="identity.step1">Frontend: HTML · CSS · JavaScript · Bootstrap</span>
-          <span data-i18n="identity.step2">Backend: PHP · Node.js · NestJS</span>
-          <span data-i18n="identity.step3">Programming: Python · Java</span>
-          <span data-i18n="identity.step4">Databases: MySQL · PostgreSQL</span>
-          <span data-i18n="identity.step5">Data & AI: Pandas · Scikit-learn · TensorFlow · Keras · Streamlit</span>
-          <span data-i18n="identity.step6">Design: Figma · UI/UX</span>
-          <span data-i18n="identity.step7">Tools: Git · GitHub</span>
-        </div>
-        <div class="stack-note">
-          <strong data-i18n="identity.noteTitle">من الفكرة إلى منتج قابل للاستخدام</strong>
-          <p data-i18n="identity.noteText">رحلة تشمل البحث والتخطيط والتصميم والتطوير والاختبار حتى الوصول إلى منتج جاهز للإطلاق.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block contact-section" id="contact" aria-labelledby="contactTitle">
-      <div class="contact-panel reveal">
+      <div class="log-body">
+       <p class="log-organization">
+        AppRo8
+       </p>
+       <h3 data-i18n="log.approRole">
+        متدربة تطوير Full-Stack
+       </h3>
+       <p class="eyebrow" data-i18n="experience.approType">
+        تدريب قائم على المشاريع · مهمتان عمليتان
+       </p>
+       <div class="training-tasks">
         <div>
-          <p class="eyebrow" data-i18n="contact.eyebrow">تواصل</p>
-          <h2 id="contactTitle" data-i18n="contact.title">هل لديك فكرة أو مشروع جديد؟</h2>
-          <p data-i18n="contact.text">يسعدني مناقشة احتياجاتك والمساهمة في بناء منتج رقمي يحقق أهدافك.</p>
+         <h4 data-i18n="log.task1">
+          المهمة ١ · Backend API
+         </h4>
+         <p data-i18n="experience.task1Text">
+          بناء Task Management REST API باستخدام Node.js وExpress وMongoDB وMongoose، مع مصادقة JWT وتوثيق Swagger/OpenAPI والتحقق من المدخلات ومعالجة الأخطاء. نشر الـAPI على Render.
+         </p>
+         <a class="project-link" href="https://github.com/ManalBafaraj/task-api" rel="noopener noreferrer" target="_blank">
+          GitHub ↗
+         </a>
         </div>
-        <div class="contact-links">
-          <a class="contact-link" href="mailto:manalBafaraj@outlook.com" aria-label="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-            Email
-          </a>
-          <a class="contact-link" href="https://www.linkedin.com/in/manal-bafaraj-799123264" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-          <a class="contact-link" href="https://github.com/ManalBafaraj" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-          </a>
+        <div>
+         <h4 data-i18n="log.task2">
+          المهمة ٢ · منتج TaskFlow
+         </h4>
+         <p data-i18n="experience.task2Text">
+          تحويل المتطلبات إلى واجهات React وTypeScript متجاوبة: لوحة تحكم وإدارة مهام وفلاتر وتجربة هاتف محسّنة. تطوير TaskFlow إلى منتج Full-Stack مكتمل، مع الاختبارات والتوثيق والنشر على Vercel.
+         </p>
+         <a class="project-link" href="#taskflow">
+          TaskFlow ↓
+         </a>
         </div>
+       </div>
+       <div class="build-diagram">
+        <span data-i18n="log.api">
+         واجهة API
+        </span>
+        <span data-i18n="log.interface">
+         واجهة المستخدم
+        </span>
+        <span data-i18n="log.product">
+         منتج متكامل
+        </span>
+       </div>
+       <p class="log-result">
+        <strong data-i18n="log.result">
+         ما أضفته إلى طريقتي
+        </strong>
+        <span data-i18n="log.approResult">
+         ربط API موثّق بواجهة متجاوبة، ثم اختبار المنتج ونشره.
+        </span>
+       </p>
       </div>
-    </section>
+     </article>
+     <article class="log-entry log-primary field-entry">
+      <div class="log-margin">
+       <span aria-hidden="true" class="entry-number">
+        02
+       </span>
+       <time data-i18n="experience.tamheerDate">
+        Oct 2025 – Apr 2026
+       </time>
+       <span class="entry-label" data-i18n="log.field">
+        ملاحظات من الميدان
+       </span>
+      </div>
+      <div class="log-body">
+       <h3 data-i18n="experience.tamheerTitle">
+        Software Engineer Trainee (Tamheer Program)
+       </h3>
+       <p class="timeline-company" data-i18n="experience.tamheerCompany">
+        Institute of Hajj and Umrah Research – Umm Al-Qura University
+       </p>
+       <p data-i18n="experience.tamheerText">
+        عملت على تطوير أنظمة وحلول رقمية متكاملة، شملت تطوير الواجهات والـBackend وقواعد البيانات، والمشاركة في بناء منصة سادن لجمع وإدارة بيانات الدراسات الميدانية، بالإضافة إلى الاختبار وتحسين الأداء وتجربة المستخدم.
+       </p>
+       <div class="log-impact">
+        <span>
+         <b dir="ltr">
+          20,000+
+         </b>
+         <span data-i18n="log.surveys">
+          استبيان
+         </span>
+        </span>
+        <span>
+         <b>
+          316
+         </b>
+         <span data-i18n="log.observers">
+          راصدًا ميدانيًا
+         </span>
+        </span>
+       </div>
+       <p class="log-result">
+        <strong data-i18n="log.result">
+         ما أضفته إلى طريقتي
+        </strong>
+        <span data-i18n="log.sadenResult">
+         بناء نظام يجمع الويب والجوال والبيانات لخدمة فرق ميدانية فعلية.
+        </span>
+       </p>
+       <a class="project-link" data-i18n="log.readSaden" href="#saden">
+        شاهد سادن
+       </a>
+      </div>
+     </article>
+    </div>
+    <div class="learning-slips">
+     <article class="learning-slip">
+      <span class="entry-label" data-i18n="log.learn">
+       قصاصة تعلّم
+      </span>
+      <time data-i18n="experience.digitalDate">
+       Jul 2024 – Aug 2024
+      </time>
+      <div>
+       <h3 data-i18n="experience.digitalTitle">
+        Software Engineer Intern (Full-Stack)
+       </h3>
+       <p class="timeline-company" data-i18n="experience.digitalCompany">
+        Digital Upgrade ME
+       </p>
+       <p data-i18n="experience.digitalText">
+        ساهمت في تطوير واختبار تطبيقات ويب باستخدام HTML وCSS وJavaScript وPython وPHP، والعمل على الواجهات والـBackend، مع استخدام Git وGitHub والعمل ضمن بيئة Agile.
+       </p>
+      </div>
+      <p class="slip-result">
+       <strong data-i18n="log.result">
+        ما أضفته إلى طريقتي
+       </strong>
+       <span data-i18n="log.digitalResult">
+        تطوير واختبار جماعي ضمن بيئة Agile.
+       </span>
+      </p>
+     </article>
+     <article class="learning-slip">
+      <span class="entry-label" data-i18n="log.learn">
+       قصاصة تعلّم
+      </span>
+      <time data-i18n="experience.uiuxDate">
+       Jul 2025 – Oct 2025
+      </time>
+      <div>
+       <h3 data-i18n="experience.uiuxTitle">
+        Advanced UI/UX Design Bootcamp
+       </h3>
+       <p class="timeline-company" data-i18n="experience.uiuxCompany">
+        Newtech Technical Challenge
+       </p>
+       <p data-i18n="experience.uiuxText">
+        تدريب مكثف في تصميم تجربة وواجهة المستخدم، شمل UX Research، تصميم الواجهات، بناء النماذج الأولية وتطبيق منهجيات التصميم المتمحور حول المستخدم.
+       </p>
+      </div>
+      <p class="slip-result">
+       <strong data-i18n="log.result">
+        ما أضفته إلى طريقتي
+       </strong>
+       <span data-i18n="log.uiuxResult">
+        قرارات تصميم تبدأ من البحث وتنتهي بنموذج قابل للتجربة.
+       </span>
+      </p>
+     </article>
+     <article class="learning-slip">
+      <span class="entry-label" data-i18n="log.learn">
+       قصاصة تعلّم
+      </span>
+      <time data-i18n="experience.fullstackDate">
+       Jun 2025 – Sep 2025
+      </time>
+      <div>
+       <h3 data-i18n="experience.fullstackTitle">
+        Full Stack Web Development Bootcamp
+       </h3>
+       <p class="timeline-company" data-i18n="experience.fullstackCompany">
+        Al-Khobar Experts Training Institute
+       </p>
+       <p data-i18n="experience.fullstackText">
+        تدريب عملي مكثف في تطوير الويب Full-Stack، شمل بناء واجهات متجاوبة باستخدام HTML وCSS وJavaScript وBootstrap وتطوير مشاريع تطبيقية.
+       </p>
+      </div>
+      <p class="slip-result">
+       <strong data-i18n="log.result">
+        ما أضفته إلى طريقتي
+       </strong>
+       <span data-i18n="log.fullstackResult">
+        ترجمة الأساسيات إلى واجهات ومشاريع ويب عملية.
+       </span>
+      </p>
+     </article>
+    </div>
+   </section>
+   <section aria-labelledby="featuredTitle" class="section-block featured-section" id="featured">
+    <div class="section-heading reveal">
+     <p class="eyebrow" data-i18n="featured.eyebrow">
+      مشروعان مميزان
+     </p>
+     <h2 data-i18n="featured.title" id="featuredTitle">
+      من التركيز اليومي إلى العمل الميداني.
+     </h2>
+    </div>
+    <article class="featured-project taskflow-project" id="taskflow">
+     <div class="project-media taskflow-media">
+      <img alt="لوحة TaskFlow للمهام والأولويات على الحاسوب" class="" data-i18n-alt="alt.taskflow" decoding="async" height="900" loading="lazy" src="img/taskflow-desktop.webp" width="1440"/>
+      <img alt="لوحة TaskFlow المتجاوبة على الهاتف" class="mobile-preview" data-i18n-alt="alt.mobile" decoding="async" height="844" loading="lazy" src="img/taskflow-mobile.webp" width="390"/>
+     </div>
+     <div class="project-content">
+      <span class="project-label" data-i18n="taskflow.label">
+       01 / منتج Full-Stack · منشور على Vercel
+      </span>
+      <h3 data-i18n="taskflow.title">
+       TaskFlow — مساحة لإنجاز ما يهم.
+      </h3>
+      <p data-i18n="taskflow.description">
+       منتج لإدارة المهام والإنتاجية، مع مصادقة JWT ومهام آمنة ومنفصلة لكل مستخدم. طوّرته من الواجهة إلى الـAPI وقاعدة البيانات.
+      </p>
+      <ul>
+       <li data-i18n="taskflow.f1">
+        إنشاء المهام وتعديلها وحذفها وإعادة فتحها؛ قوائم تحقق وأولويات وتصنيفات ومواعيد تسليم.
+       </li>
+       <li data-i18n="taskflow.f2">
+        اقتراح Next Move وجلسات تركيز تستمر عبر التنقل وتحديث الصفحة.
+       </li>
+       <li data-i18n="taskflow.f3">
+        تقويم وتذكيرات وإعدادات وثيمات وتفضيلات المستخدم، مع تهيئة متجاوبة للهاتف.
+       </li>
+       <li data-i18n="taskflow.f4">
+        اختبارات للواجهات والـBackend، ونشر إنتاجي على Vercel.
+       </li>
+      </ul>
+      <p class="training-caption" data-i18n="taskflow.training">
+       بُني خلال تدريب AppRo8 · وتطوّر إلى منتج جاهز للإنتاج
+      </p>
+      <div class="impact-list">
+       <span>
+        React 19
+       </span>
+       <span>
+        TypeScript
+       </span>
+       <span>
+        TanStack Start / Router / Query
+       </span>
+       <span>
+        Express 5
+       </span>
+       <span>
+        MongoDB / Mongoose
+       </span>
+       <span>
+        JWT
+       </span>
+      </div>
+      <div class="hero-actions">
+       <a class="button primary" data-i18n="taskflow.live" href="https://task-manager-fullstack-topaz.vercel.app" rel="noopener noreferrer" target="_blank">
+        المشروع المباشر
+       </a>
+       <a class="button secondary" href="https://github.com/ManalBafaraj/task-manager-fullstack" rel="noopener noreferrer" target="_blank">
+        GitHub ↗
+       </a>
+      </div>
+     </div>
+    </article>
+    <article class="featured-project saden-project" id="saden">
+     <div class="project-media saden-media">
+      <div aria-label="معرض واجهات سادن" class="saden-gallery" data-i18n-aria="gallery.label">
+       <a aria-label="تكبير الصورة الحالية" class="gallery-main" data-i18n-aria="gallery.open" href="img/saden-gallery-dashboard.webp">
+        <img alt="لوحة سادن لإدارة بيانات الدراسات الميدانية" data-i18n-alt="alt.saden" decoding="async" height="951" id="galleryImage" loading="lazy" src="img/saden-gallery-dashboard.webp" width="1800"/>
+        <span aria-hidden="true" class="enlarge-mark">
+         ↗
+        </span>
+       </a>
+       <div class="gallery-toolbar">
+        <button class="gallery-prev icon-button" data-i18n="gallery.prev" type="button">
+         الصورة السابقة
+        </button>
+        <p aria-live="polite" id="galleryCaption">
+         لوحة التحكم
+        </p>
+        <button class="gallery-next icon-button" data-i18n="gallery.next" type="button">
+         الصورة التالية
+        </button>
+       </div>
+       <div class="gallery-thumbs">
+        <button aria-pressed="true" class="gallery-thumb" data-gallery-index="0" type="button">
+         <img alt="" decoding="async" height="999" loading="lazy" src="img/saden-gallery-dashboard.webp" width="1891"/>
+         <span data-i18n="gallery.dashboard">
+          لوحة التحكم
+         </span>
+        </button>
+        <button aria-pressed="false" class="gallery-thumb" data-gallery-index="1" type="button">
+         <img alt="" decoding="async" height="1000" loading="lazy" src="img/saden-gallery-map.webp" width="1918"/>
+         <span data-i18n="gallery.map">
+          الخريطة
+         </span>
+        </button>
+        <button aria-pressed="false" class="gallery-thumb" data-gallery-index="2" type="button">
+         <img alt="" decoding="async" height="2000" loading="lazy" src="img/saden-gallery-poster.webp" width="1414"/>
+         <span data-i18n="gallery.poster">
+          بوستر المشروع
+         </span>
+        </button>
+       </div>
+       <p class="gallery-hint" data-i18n="gallery.hint">
+        اضغط للتكبير · تصفّح الواجهات أدناه
+       </p>
+      </div>
+     </div>
+     <div class="project-content">
+      <h3 data-i18n="saden.title">
+       سادن — بيانات الميدان، في مكان واحد.
+      </h3>
+      <div class="project-header">
+       <img alt="شعار سادن" class="project-logo" data-i18n-alt="alt.logo" height="675" loading="lazy" src="img/sadenLogo.webp" width="1200"/>
+       <div class="project-client">
+        <span class="client-kicker" data-i18n="featured.clientKicker">
+         تم تطويره لصالح
+        </span>
+        <span class="client-name" data-i18n="featured.clientName">
+         معهد خادم الحرمين الشريفين لأبحاث الحج والعمرة
+        </span>
+       </div>
+      </div>
+      <span class="project-label" data-i18n="featured.label">
+       تم استخدامه ميدانيًا بنجاح · موسم الحج 2026
+      </span>
+      <p data-i18n="featured.description">
+       منصة ويب وجوال وBackend وقاعدة بيانات لجمع بيانات الدراسات الميدانية. تشمل الاستبيانات والفرق والأدوار والصلاحيات، وتحديد المواقع والمزامنة دون اتصال وتحليل البيانات في لوحة مركزية. استُخدمت فعليًا في العمليات الميدانية خلال موسم الحج 2026.
+      </p>
+      <div aria-label="Saden impact metrics" class="featured-metrics">
+       <div>
+        <strong>
+         316
+        </strong>
+        <span data-i18n="featured.metricObservers">
+         راصدًا نشطًا
+        </span>
+       </div>
+       <div>
+        <strong dir="ltr">
+         20,000+
+        </strong>
+        <span data-i18n="featured.metricSurveys">
+         استبيان تم تسجيله
+        </span>
+       </div>
+      </div>
+      <div class="impact-list">
+       <span>
+        NestJS
+       </span>
+       <span>
+        PostgreSQL
+       </span>
+       <span>
+        Flutter
+       </span>
+       <span>
+        RBAC
+       </span>
+      </div>
+     </div>
+    </article>
+   </section>
+   <section aria-labelledby="projectsTitle" class="section-block" id="projects">
+    <div class="section-heading reveal">
+     <p class="eyebrow" data-i18n="projects.eyebrow">
+      مشاريع أخرى
+     </p>
+     <h2 data-i18n="projects.title" id="projectsTitle">
+      تجارب أخرى، ومشكلات مختلفة.
+     </h2>
+    </div>
+    <div class="project-grid">
+     <article class="project-card research-card reveal">
+      <img alt="تصنيف المشاعر من الصوت" data-i18n-alt="alt.emotion" height="675" loading="lazy" src="img/Emotion_no_bg.webp" width="1200">
+       <div>
+        <span class="project-type" data-i18n="projects.aiType">
+         AI Research
+        </span>
+        <h3 data-i18n="projects.emotionTitle">
+         Speech Emotion Classification
+        </h3>
+        <p data-i18n="projects.emotionText">
+         بحث لتصنيف المشاعر من الصوت باستخدام Machine Learning ونماذج CNN وتحليل الخصائص الصوتية على مجموعة بيانات CREMA-D.
+        </p>
+        <p class="research-meta" data-i18n="projects.emotionTech">
+         CNN · MFCC · Spectrogram · CREMA-D
+        </p>
+        <p class="research-result" data-i18n="projects.emotionAccuracy">
+         96.9% Average Accuracy
+        </p>
+        <a class="project-link" data-i18n="projects.paper" href="assets/documents/Speech_Emotion_Classification.pdf" rel="noopener noreferrer" target="_blank">
+         عرض الورقة البحثية
+        </a>
+       </div>
+
+     </article>
+     <article class="project-card reveal">
+      <img alt="لوحة تحليل محاولات الدخول" data-i18n-alt="alt.brute" height="629" loading="lazy" src="img/BruteForce.webp" width="1200">
+       <div>
+        <span class="project-type" data-i18n="projects.bruteType">
+         Data dashboard
+        </span>
+        <h3 data-i18n="projects.bruteTitle">
+         Brute Force Dashboard
+        </h3>
+        <p data-i18n="projects.bruteText">
+         لوحة تفاعلية لتحليل محاولات تسجيل الدخول وكشف أنماط الهجمات بصريًا.
+        </p>
+        <a class="project-link" data-i18n="projects.live" href="https://brute-force-dashboard-dmvtp8jvnhwctbwhb8hdan.streamlit.app/" rel="noopener noreferrer" target="_blank">
+         زيارة المشروع
+        </a>
+        <a class="project-link" data-i18n="projects.github" href="https://github.com/ManalBafaraj/brute-force-dashboard/tree/main" rel="noopener noreferrer" target="_blank">
+         GitHub
+        </a>
+       </div>
+
+     </article>
+     <article class="project-card reveal">
+      <img alt="واجهة نظام إدارة الاختبارات" data-i18n-alt="alt.exam" height="675" loading="lazy" src="img/exam-start-laptop.webp" width="1200">
+       <div>
+        <span class="project-type" data-i18n="projects.examType">
+         Web platform
+        </span>
+        <h3 data-i18n="projects.examTitle">
+         Exam Management System
+        </h3>
+        <p data-i18n="projects.examText">
+         منصة اختبارات إلكترونية للطلاب والمشرفين، مع اختبارات مؤقتة ولوحة إدارة.
+        </p>
+        <a class="project-link" data-i18n="projects.github" href="https://github.com/ManalBafaraj/Exam-Management-System" rel="noopener noreferrer" target="_blank">
+         GitHub
+        </a>
+       </div>
+
+     </article>
+     <article class="project-card reveal">
+      <img alt="واجهة تصفح AnimeGo" data-i18n-alt="alt.anime" height="675" loading="lazy" src="img/animego-list-laptop.webp" width="1200">
+       <div>
+        <span class="project-type" data-i18n="projects.animeType">
+         Web interface
+        </span>
+        <h3 data-i18n="projects.animeTitle">
+         AnimeGo
+        </h3>
+        <p data-i18n="projects.animeText">
+         واجهة ويب لعرض أعمال الأنمي بتجربة تصفح منظمة وبصرية.
+        </p>
+        <a class="project-link" data-i18n="projects.github" href="https://github.com/ManalBafaraj/AnimeGo-Website" rel="noopener noreferrer" target="_blank">
+         GitHub
+        </a>
+       </div>
+
+     </article>
+     <article class="project-card gosport-card reveal">
+      <img alt="تصميم واجهات تطبيق GoSport" data-i18n-alt="alt.sport" height="675" loading="lazy" src="img/go_sport(2).webp" width="1200"/>
+      <div>
+       <span class="project-type" data-i18n="projects.designType">
+        UI/UX
+       </span>
+       <h3 data-i18n="projects.gosportTitle">
+        GoSport
+       </h3>
+       <p data-i18n="projects.gosportText">
+        تصميم تجربة تطبيق يساعد المستخدمين على إيجاد الأنشطة والمراكز الرياضية بسهولة.
+       </p>
+       <a class="project-link" data-i18n="projects.prototype" href="https://www.figma.com/proto/WqMyAoa779XMphWz7PuU4P/Go-Sport?page-id=135%3A217&amp;node-id=695-2043&amp;viewport=-162%2C-636%2C0.3&amp;t=XCF8l6p7ZtDINCiP-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=695%3A1815&amp;show-proto-sidebar=1" rel="noopener noreferrer" target="_blank">
+        Figma prototype
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section aria-labelledby="identityTitle" class="section-block identity-section" id="identity">
+    <div class="section-heading reveal">
+     <p class="eyebrow" data-i18n="identity.eyebrow">
+      أدواتي التقنية
+     </p>
+     <h2 data-i18n="identity.title" id="identityTitle">
+      أدوات أستخدمها لبناء المنتج كاملًا.
+     </h2>
+    </div>
+    <div class="stack-grid">
+     <article class="stack-card">
+      <h3 data-i18n="stack.frontend">
+       الواجهات
+      </h3>
+      <ul dir="ltr">
+       <li>
+        React 19
+       </li>
+       <li>
+        TypeScript
+       </li>
+       <li>
+        JavaScript
+       </li>
+       <li>
+        TanStack Start
+       </li>
+       <li>
+        TanStack Router
+       </li>
+       <li>
+        TanStack Query
+       </li>
+       <li>
+        HTML
+       </li>
+       <li>
+        CSS
+       </li>
+       <li>
+        Tailwind CSS
+       </li>
+       <li>
+        Bootstrap
+       </li>
+       <li>
+        Responsive Design
+       </li>
+       <li>
+        Radix UI
+       </li>
+      </ul>
+     </article>
+     <article class="stack-card">
+      <h3 data-i18n="stack.backend">
+       الخوادم وواجهات API
+      </h3>
+      <ul dir="ltr">
+       <li>
+        Node.js
+       </li>
+       <li>
+        Express.js
+       </li>
+       <li>
+        NestJS
+       </li>
+       <li>
+        PHP
+       </li>
+       <li>
+        REST APIs
+       </li>
+       <li>
+        JWT Authentication
+       </li>
+       <li>
+        Swagger/OpenAPI
+       </li>
+      </ul>
+     </article>
+     <article class="stack-card">
+      <h3 data-i18n="stack.db">
+       قواعد البيانات
+      </h3>
+      <ul dir="ltr">
+       <li>
+        MongoDB
+       </li>
+       <li>
+        Mongoose
+       </li>
+       <li>
+        PostgreSQL
+       </li>
+       <li>
+        MySQL
+       </li>
+       <li>
+        Database Design
+       </li>
+      </ul>
+     </article>
+     <article class="stack-card">
+      <h3 data-i18n="stack.testing">
+       الاختبار والنشر
+      </h3>
+      <ul dir="ltr">
+       <li>
+        Vitest
+       </li>
+       <li>
+        API Testing
+       </li>
+       <li>
+        TypeScript Checks
+       </li>
+       <li>
+        Git
+       </li>
+       <li>
+        GitHub
+       </li>
+       <li>
+        Vercel
+       </li>
+       <li>
+        Render
+       </li>
+       <li>
+        Bun
+       </li>
+      </ul>
+     </article>
+     <article class="stack-card">
+      <h3 data-i18n="stack.design">
+       المنتج والتصميم
+      </h3>
+      <ul dir="ltr">
+       <li>
+        Figma
+       </li>
+       <li>
+        UI/UX
+       </li>
+       <li>
+        Prototyping
+       </li>
+       <li>
+        Accessibility
+       </li>
+       <li>
+        User-Centered Design
+       </li>
+      </ul>
+     </article>
+     <article class="stack-card">
+      <h3 data-i18n="stack.data">
+       البرمجة والبيانات
+      </h3>
+      <ul dir="ltr">
+       <li>
+        Python
+       </li>
+       <li>
+        Java
+       </li>
+       <li>
+        C++
+       </li>
+       <li>
+        Pandas
+       </li>
+       <li>
+        Streamlit
+       </li>
+       <li>
+        TensorFlow
+       </li>
+       <li>
+        Keras
+       </li>
+      </ul>
+     </article>
+    </div>
+   </section>
+   <section aria-labelledby="contactTitle" class="section-block contact-section" id="contact">
+    <div class="contact-panel reveal">
+     <div class="contact-copy">
+     <div>
+      <h2 data-i18n="contact.title" id="contactTitle">
+       متاحة لفرص في هندسة البرمجيات
+      </h2>
+      <p class="contact-note" data-i18n="contact.note">لنصنع منتجًا مفيدًا.</p>
+     </div>
+     <div class="contact-links">
+      <a aria-label="البريد الإلكتروني" class="contact-link" data-i18n-aria="email" href="mailto:manalBafaraj@outlook.com">
+       <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18">
+        <rect height="16" rx="2" width="20" x="2" y="4">
+        </rect>
+        <path d="M22 4L12 13 2 4">
+        </path>
+       </svg>
+       <span data-i18n="email">
+        البريد الإلكتروني
+       </span>
+      </a>
+      <a aria-label="LinkedIn" class="contact-link" href="https://www.linkedin.com/in/manal-bafaraj-799123264" rel="noopener noreferrer" target="_blank">
+       <svg fill="currentColor" height="18" viewBox="0 0 24 24" width="18">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+        </path>
+       </svg>
+       LinkedIn
+      </a>
+      <a aria-label="GitHub" class="contact-link" href="https://github.com/ManalBafaraj" rel="noopener noreferrer" target="_blank">
+       <svg fill="currentColor" height="18" viewBox="0 0 24 24" width="18">
+        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z">
+        </path>
+       </svg>
+       GitHub
+      </a>
+     </div>
+     </div>
+     <aside class="contact-identity" aria-labelledby="contactIdentityName">
+      <div class="contact-identity-copy">
+       <h3 id="contactIdentityName" data-i18n="contact.identityName">منال بافرج</h3>
+       <p class="contact-identity-role" data-i18n="contact.identityRole">مهندسة برمجيات Full‑Stack</p>
+       <p class="contact-identity-signature" data-i18n="contact.identitySignature">أبني بعناية، من الفكرة إلى الأثر.</p>
+      </div>
+      <!-- Static paths from mark-color.svg; no logo animation inside this card. -->
+      <svg class="contact-identity-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80" aria-hidden="true" focusable="false">
+       <path fill="#3C1D55" d="M31 8H18C11.93 8 7 12.93 7 19v12h10c7.73 0 14-6.27 14-14V8Z"/>
+       <path fill="#C84C7A" d="M36 8h10.4L57 18.6V31h-9c-7.18 0-13-5.82-13-13V8h1Z"/>
+       <path fill="#6A3A91" d="M57 35v11c0 6.07-4.93 11-11 11H35v-9c0-7.18 5.82-13 13-13h9Z"/>
+       <path fill="#A875B5" d="M31 57H18C11.93 57 7 52.07 7 46V35h9c8.28 0 15 6.72 15 15v7Z"/>
+       <path fill="#FFF8FB" d="M27.3 27.3h9.4v9.4h-9.4z" transform="rotate(45 32 32)"/>
+       <circle cx="32" cy="32" r="3.15" fill="#EFBC63"/>
+      </svg>
+     </aside>
+    </div>
+   </section>
   </main>
-
   <footer class="site-footer">
-    <a href="#top" data-i18n="footer.top">العودة للأعلى</a>
-    <span data-i18n="footer.copy">صُنع بعناية - منال 2026</span>
+   <a data-i18n="footer.top" href="#top">
+    العودة للأعلى
+   </a>
+   <span data-i18n="footer.copy">
+    صُنع بعناية - منال 2026
+   </span>
   </footer>
-
-  <script src="script.js"></script>
-</body>
+  <dialog aria-labelledby="lightboxTitle" id="sadenLightbox">
+   <div class="lightbox-top">
+    <h2 data-i18n="gallery.dialog" id="lightboxTitle">
+     سادن — عرض الصور بحجم كبير
+    </h2>
+    <button class="lightbox-close" data-i18n="gallery.close" type="button">
+     إغلاق المعرض
+    </button>
+   </div>
+   <div class="lightbox-tools"><button type="button" class="lightbox-zoom" aria-pressed="false" data-i18n="gallery.zoom">تكبير التفاصيل</button></div>
+   <div class="lightbox-stage" tabindex="0" data-i18n-aria="gallery.dialog" aria-label="سادن — عرض الصور بحجم كبير">
+    <img alt="لوحة سادن لإدارة بيانات الدراسات الميدانية" decoding="async" height="951" id="lightboxImage" loading="lazy" src="img/saden-gallery-dashboard.webp" width="1800"/>
+   </div>
+   <div class="lightbox-controls">
+    <button class="lightbox-prev icon-button" data-i18n="gallery.prev" type="button">
+     الصورة السابقة
+    </button>
+    <p aria-live="polite" id="lightboxCaption">
+    </p>
+    <button class="lightbox-next icon-button" data-i18n="gallery.next" type="button">
+     الصورة التالية
+    </button>
+   </div>
+  </dialog>
+  <script src="script.js">
+  </script>
+ </body>
 </html>

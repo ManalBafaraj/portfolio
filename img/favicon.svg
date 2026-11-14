@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Manal Bafaraj favicon">
+  <rect width="64" height="64" rx="15" fill="#FFF8FB"/>
+  <path fill="#3C1D55" d="M31 7H18C11.37 7 6 12.37 6 19v13h11c8.28 0 15-6.72 15-15V7h-1Z"/>
+  <path fill="#C84C7A" d="M36 7h11l11 11v14H47c-7.73 0-14-6.27-14-14V7h3Z"/>
+  <path fill="#6A3A91" d="M58 34v12c0 6.63-5.37 12-12 12H34V47c0-7.18 5.82-13 13-13h11Z"/>
+  <path fill="#A875B5" d="M32 58H18C11.37 58 6 52.63 6 46V34h11c8.28 0 15 6.72 15 15v9Z"/>
+  <circle cx="33" cy="33" r="4.2" fill="#EFBC63" stroke="#FFF8FB" stroke-width="2"/>
+</svg>
