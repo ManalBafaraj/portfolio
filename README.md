@@ -1,59 +1,79 @@
-# Manal Bafaraj — Portfolio
+<div align="center">
+  <img src="img/identity/mark-color.svg" width="76" height="76" alt="Manal Bafaraj — Idea in Motion" />
+  <h1>Manal Bafaraj</h1>
+  <p><strong>Product Building Portfolio</strong></p>
+  <p>Built with care. From idea to impact.</p>
+  <p>
+    <a href="https://manalbafaraj.github.io/portfolio/"><strong>Live Portfolio ↗</strong></a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/ManalBafaraj">GitHub</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/manal-bafaraj-799123264">LinkedIn</a>
+  </p>
+</div>
 
-A personal portfolio for Software Engineering, Full-Stack, and Frontend opportunities, built with semantic HTML, responsive CSS, and vanilla JavaScript. **Product Building Notebook / دفتر بناء المنتجات** brings together a warm pink grid, paper clippings, engineering sketches, and annotated development entries.
+<p dir="rtl">أنا منال بافرج، مهندسة برمجيات Full‑Stack. أفهم المشكلة، أنظّم الفكرة، ثم أبني منتجًا متكاملًا وسهل الاستخدام. أبني بعناية، من الفكرة إلى الأثر.</p>
 
-[Live website](https://manalbafaraj.github.io/portfolio/) · [GitHub](https://github.com/ManalBafaraj) · [LinkedIn](https://www.linkedin.com/in/manal-bafaraj-799123264)
+I'm a **Full-Stack Software Engineer** building useful digital products from idea to launch. My work connects frontend, backend, and UI/UX through a thoughtful, practical approach to product development.
 
-![Portfolio desktop preview](img/portfolio-preview.webp)
+This portfolio is a **Product Building Notebook**: selected work, development notes, and the experience behind the products. Its *Idea in Motion* identity brings together deep purple, warm rose, and a small golden spark on a quiet paper grid.
 
-## Content
+![Current portfolio preview with the Idea in Motion identity](img/portfolio-preview.webp)
 
-- Introduction, availability, and working principles
-- Build Log: dated notebook entries for AppRo8 and Tamheer / Saden, plus shorter learning notes
-- Featured projects: TaskFlow and Saden
-- Research, dashboards, web platforms, and UI/UX projects
-- Technical stack and recruitment contact links
+## Featured work
 
-## Languages and accessibility
+### TaskFlow
 
-Arabic (RTL) and English (LTR) are available from the navigation. Language selection is saved locally when browser storage is available. Language, direction, image descriptions, and navigation labels update together. Content remains readable without JavaScript. Includes a skip link, keyboard focus states, responsive navigation, and reduced motion support. The active navigation item follows the section in view.
+A production-ready full-stack task and productivity product. It combines secure user-specific tasks, checklists, priorities, a calendar, and persistent focus sessions in a responsive experience.
 
-The Saden gallery includes thumbnails, previous/next controls, direction-aware arrow keys, a native modal viewer, Escape to close, and touch swipes. Use **Zoom to details** to inspect screenshots at their local image resolution; scroll or pan within the viewer, then select **Fit image** to return. Zoom resets when switching images. Without JavaScript, the main gallery image opens as a regular image link.
+**React · TypeScript · TanStack · Express · MongoDB**
 
-Hero previews float gently with independent timing and smaller movement on phones. The Idea in Motion mark has a single 850ms introduction. Reduced motion disables the animations and hover movement; page content never depends on an animation to become visible. The compact contact identity card uses translated HTML text and a static SVG mark; the Open Graph image is reserved for link previews.
+[Live project](https://task-manager-fullstack-topaz.vercel.app) · [Source code](https://github.com/ManalBafaraj/task-manager-fullstack)
 
-## Technology and structure
+### Saden
 
-No build step or production dependencies are required. Google Fonts load with system fallbacks. Real project screenshots are stored locally as compressed WebP files with explicit dimensions; images below the hero load lazily.
+A web and mobile platform for field research data. I contributed across interfaces, backend, and databases, supporting surveys, team permissions, geolocation, and offline synchronization. Used in real field operations with **20,000+ surveys** and **316 field observers**.
 
-```text
-portfolio_site/
-  index.html          Page content and semantic structure
-  style.css           Responsive layout and visual identity
-  script.js           Translations and navigation behavior
-  img/                Project images and portfolio preview
-    identity/         Idea in Motion mark, favicons, and Open Graph image
-  assets/documents/   Speech emotion classification research
-  .nojekyll           Serve the static site without Jekyll processing
-  README.md
-```
+**NestJS · PostgreSQL · Flutter**
+
+[Explore Saden in the portfolio](https://manalbafaraj.github.io/portfolio/#saden)
+
+## How I build
+
+**Understand → Design → Build → Test → Ship**
+
+Start with the problem and the people using the product. Shape a clear experience, connect it to a reliable implementation, test the important flows, and keep improving after launch.
+
+## The portfolio itself
+
+Built with **semantic HTML, responsive CSS, and vanilla JavaScript**. No framework, build step, or production package installation is required.
+
+- **Arabic / English:** complete language switching with RTL / LTR support and saved preferences.
+- **Responsive:** balanced layouts across mobile, tablet, and desktop.
+- **Accessible:** skip link, visible keyboard focus, descriptive labels, and readable content without JavaScript.
+- **Interactive Saden gallery:** thumbnails, an enlarged viewer, detail zoom, keyboard controls, and touch swipes.
+- **Reduced-motion support:** optional motion respects the browser preference; the contact identity card stays still.
+
+Project imagery is stored locally in optimized formats. The sharing image is reserved for link previews, while the contact section uses real, translated HTML text.
 
 ## Run locally
 
-Install Python 3, open a terminal in this repository, and start an HTTP server:
+With Python 3 installed, open a terminal in the repository root:
 
 ```sh
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Visit <http://127.0.0.1:8000>. Keep the terminal running while previewing; press Ctrl+C to stop it. No environment variables or account setup are needed.
+Open **http://127.0.0.1:8000/**. Keep the terminal running during the preview and press **Ctrl+C** to stop it. No credentials or environment variables are needed.
 
-## GitHub Pages
+The site is hosted on **GitHub Pages**, using the `main` branch and repository root. Asset paths are relative and case-sensitive; `.nojekyll` keeps the static files as authored.
 
-GitHub Pages is configured to **Deploy from a branch → main → / (root)** in the existing `ManalBafaraj/portfolio` repository. Push reviewed changes to `main` to publish. Keep `index.html` at the repository root; `.nojekyll` preserves the static files as authored. The existing live URL above remains unchanged. Asset paths are relative and case-sensitive.
+## Let's connect
 
-Local review files, test scripts, archives, editor state, and private documents are excluded from the published repository.
+[GitHub](https://github.com/ManalBafaraj) · [LinkedIn](https://www.linkedin.com/in/manal-bafaraj-799123264) · [Email](mailto:manalBafaraj@outlook.com)
 
-## Ownership
+---
 
-Portfolio content and project imagery belong to Manal Bafaraj. Do not reuse them without permission.
+<p align="center"><em>Built with care. From idea to impact.</em></p>
+
+Portfolio content, identity, and project imagery belong to Manal Bafaraj. Please ask before reusing them.
