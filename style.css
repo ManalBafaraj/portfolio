@@ -978,6 +978,7 @@ html[lang="ar"] .hero-stamp { font-family: Tajawal, system-ui, sans-serif; font-
 .project-card { transition: transform .2s ease, box-shadow .2s ease; border-radius: 4px 9px 7px 5px; }
 .project-card > div { padding: 20px; }
 .project-card p { font-size: 16px; }
+.project-wake-note { display: inline-block; margin-inline-start: 8px; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .button { transition: translate .2s ease, box-shadow .2s ease, background .2s ease; }
 .contact-panel { padding: 32px; grid-template-columns: 1fr auto; gap: 32px; background: #f0e1ee; border: 1px solid #dbc5da; border-radius: 4px 12px 6px 8px; }
 .contact-panel h2 { font-size: clamp(24px,2.8vw,36px); max-width: 28ch; margin: 0; }
