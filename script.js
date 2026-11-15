@@ -611,5 +611,18 @@ if ('IntersectionObserver' in window && !motionQuery.matches) {
     target.classList.add('motion-ready');
     motionObserver.observe(target);
   });
+
+  // Replay the welcome wave and About sketches whenever they re-enter view.
+  const repeatTargets = [...document.querySelectorAll('[data-motion-repeat]')];
+  const repeatObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('is-seen');
+      else entry.target.classList.remove('is-seen');
+    });
+  }, { threshold: 0.04, rootMargin: '-6% 0px -6% 0px' });
+  repeatTargets.forEach(target => {
+    target.classList.add('motion-ready');
+    repeatObserver.observe(target);
+  });
 }
 applyLanguage(lang);

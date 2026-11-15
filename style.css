@@ -1181,7 +1181,13 @@ body.en .contact-identity-signature { font-family: Georgia, serif; }
 .taskflow-sketch.motion-ready:not(.is-seen) .log-result,.about-sketches.motion-ready:not(.is-seen) .sketch-annotation { opacity: 0; }
 .taskflow-sketch.motion-ready .draw-path,.about-sketches.motion-ready .draw-path { stroke-dasharray: 500; stroke-dashoffset: 500; }
 .taskflow-sketch.motion-ready.is-seen .draw-path,.about-sketches.motion-ready.is-seen .draw-path { stroke-dashoffset: 0; transition: stroke-dashoffset .72s cubic-bezier(.22,.72,.2,1); }
+.about-sketches.motion-ready.is-seen .draw-path { transition-duration: 1.2s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(2) .draw-path { transition-delay: .18s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(3) .draw-path { transition-delay: .36s; }
 .taskflow-sketch.motion-ready.is-seen .log-result,.about-sketches.motion-ready.is-seen .sketch-annotation { opacity: 1; transition: opacity .25s ease .7s; }
+.about-sketches.motion-ready.is-seen .sketch-annotation { transition-duration: .32s; transition-delay: 1s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(2) .sketch-annotation { transition-delay: 1.18s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(3) .sketch-annotation { transition-delay: 1.36s; }
 .taskflow-sketch .log-result { margin-top: 9px; padding: 8px 10px; gap: 8px; font-size: 13px; line-height: 1.6; }
 .taskflow-sketch .log-result strong { font-size: 12px; }
 @media (max-width: 760px) {
@@ -1210,7 +1216,7 @@ body.en h3,body.en h4 { font-weight: 600; }
 body.en .hero h1 { line-height: 1.18; }
 .hero-hello { display: flex; align-items: center; gap: 8px; width: fit-content; }
 .welcome-hand { display: block; width: 23px; height: 25px; overflow: visible; transform-box: fill-box; transform-origin: 34% 88%; }
-.hero-hello.motion-ready.is-seen .welcome-hand { animation: greeting-wave 1.05s ease-in-out 1 both; }
+.hero-hello.motion-ready.is-seen .welcome-hand { animation: greeting-wave 2s ease-in-out 1 both; }
 .welcome-motion-line { opacity: .7; }
 .idea-highlight { position: relative; display: inline-block; color: var(--brand-purple); white-space: nowrap; }
 body.en .idea-highlight { font-family: Georgia, serif; font-style: italic; font-weight: 700; }
@@ -1220,10 +1226,13 @@ body.en .idea-highlight { font-family: Georgia, serif; font-style: italic; font-
 .idea-highlight.motion-ready.is-seen .idea-underline-path { stroke-dashoffset: 0; transition: stroke-dashoffset .72s cubic-bezier(.22,.72,.2,1); }
 @keyframes greeting-wave {
   0%,100% { rotate: 0deg; }
-  20% { rotate: -8deg; }
-  40% { rotate: 5deg; }
-  60% { rotate: -7deg; }
-  80% { rotate: 3deg; }
+  12% { rotate: -13deg; }
+  24% { rotate: 8deg; }
+  36% { rotate: -12deg; }
+  48% { rotate: 7deg; }
+  62% { rotate: -9deg; }
+  76% { rotate: 5deg; }
+  89% { rotate: -4deg; }
 }
 @media (max-width:600px) {
   .hero h1 { max-width: 21ch; line-height: 1.3; }
