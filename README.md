@@ -24,7 +24,7 @@ This portfolio is a **Product Building Notebook**: selected work, development no
 
 ### TaskFlow
 
-A production-ready full-stack task and productivity product. It combines secure user-specific tasks, checklists, priorities, a calendar, and persistent focus sessions in a responsive experience.
+A full-stack task and productivity product built during AppRo8 training and published on Vercel for people to try. It combines secure user-specific tasks, checklists, priorities, a calendar, and persistent focus sessions in a responsive experience.
 
 **React · TypeScript · TanStack · Express · MongoDB**
 

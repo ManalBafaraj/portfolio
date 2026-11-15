@@ -1371,11 +1371,13 @@ section,.featured-project { scroll-margin-top: 0; }
 .tech-family .tech-logo { grid-column: 1; grid-row: 1 / span 2; }
 .tech-family .tech-name { grid-column: 2; grid-row: 1; font-weight: 500; }
 .tech-family .tech-detail { grid-column: 2; grid-row: 2; color: var(--muted); font-size: 13px; line-height: 1.45; }
+.stack-card > ul > .tech-text-only { padding-inline-start: 25px; }
 .practice-area { margin-top: 10px; padding-top: 8px; }
 .practice-area h4 { margin-bottom: 5px; font-size: 13px; }
 .practice-list { gap: 3px 10px; }
 .practice-list li { display: inline-flex; align-items: baseline; gap: 8px; font-size: 13.5px; line-height: 1.65; }
 .practice-list li + li::before { content: '·'; color: var(--brand-rose); font-weight: 700; }
+html[lang="ar"] .practice-list { direction: rtl; }
 @media (max-width:900px) {
   .stack-card { padding: 0 16px 17px; }
 }
