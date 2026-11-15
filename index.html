@@ -64,7 +64,7 @@
       عنّي
      </a>
      <a data-i18n="nav.experience" href="#experience">
-      سجل البناء
+      رحلتي في التطوير
      </a>
      <a data-i18n="nav.featured" href="#featured">
       أعمال مختارة
@@ -90,33 +90,30 @@
      <p class="notebook-title" data-i18n="notebook.title">
       دفتر بناء المنتجات
      </p>
-     <p class="hero-hello" data-i18n="hero.hello">
-      مرحبًا، أنا منال 👋
+     <p class="hero-hello" data-motion-once>
+      <span data-i18n="hero.hello">مرحبًا، أنا منال</span>
+      <svg aria-hidden="true" class="welcome-hand" focusable="false" viewBox="0 0 32 34" fill="none">
+       <path d="M10.6 15.8 9.9 5.2C9.7 2.7 13.5 2 14 4.8l1 8.4-.1-9.1c0-2.9 4.1-3 4.3-.1l.4 9 1.1-7.2c.4-2.6 4.1-2.2 4 .6l-.6 8 2.3-4.1c1.3-2.3 4.5-.2 3.2 2.1l-4.4 9.9c-1.7 4-4.1 6.2-8.6 6.4l-4.4.1c-3.3.1-5.4-1.1-7.1-3.7L2.4 20c-1.7-2.6 1.6-4.5 3.4-2.4l3.2 3.5-.2-5.3c-.1-1.8 1.5-2.7 2.8-1.6Z" fill="#f5e5f0" stroke="#3C1D55" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+       <path class="welcome-motion-line" d="M5 7 2.5 5.2M7 3 6.5.8" stroke="#A875B5" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
      </p>
      <p class="eyebrow" data-i18n="hero.eyebrow">
       مهندسة برمجيات Full‑Stack
      </p>
-     <h1 data-i18n="hero.title" id="heroTitle">
-      أبني منتجات رقمية واضحة، من الفكرة إلى الإطلاق.
+     <h1 id="heroTitle">
+      <span data-i18n="hero.titleBefore">أبني منتجات رقمية واضحة، من </span><span class="idea-highlight" data-motion-once><span data-i18n="hero.idea">الفكرة</span><svg aria-hidden="true" class="idea-underline" focusable="false" viewBox="0 0 170 12" preserveAspectRatio="none"><path class="idea-underline-path" d="M3 8C37 3 69 10 103 6S145 4 167 7"/></svg></span><span data-i18n="hero.titleAfter"> إلى الإطلاق.</span>
      </h1>
      <p class="hero-lead" data-i18n="hero.lead">
       أجمع بين تطوير الواجهات والـBackend وتصميم تجربة المستخدم لبناء منتجات متكاملة وسهلة الاستخدام.
      </p>
      <div class="hero-actions">
-      <a class="button primary" data-i18n="hero.primary" href="#featured">
-       استعرض أعمالي
-      </a>
+      <a class="button primary" data-i18n="hero.primary" href="#featured">استعرض أعمالي</a>
       <a class="button secondary" data-i18n="hero.secondary" href="#contact">
        تواصل معي
       </a>
       <a class="text-link" href="https://github.com/ManalBafaraj" rel="noopener noreferrer" target="_blank">
        GitHub <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 12 12 4M5 4h7v7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
-     </div>
-     <div class="availability">
-      <p data-i18n="hero.available">
-       متاحة لفرص عمل في هندسة البرمجيات
-      </p>
      </div>
     </div>
     <div class="hero-showcase">
@@ -186,65 +183,78 @@
    </div>
    <section aria-labelledby="aboutTitle" class="section-block notebook-about" id="about">
     <div class="section-heading reveal">
-     <p class="eyebrow" data-i18n="about.eyebrow">
-      عنّي
-     </p>
-     <h2 data-i18n="about.title" id="aboutTitle">
-      أفهم المشكلة، ثم أبني الحل.
-     </h2>
+     <div class="about-eyebrow-wrap" data-motion-once>
+      <svg aria-hidden="true" class="about-ornament about-ornament-star-one" focusable="false" viewBox="0 0 14 12"><path pathLength="1" d="M7 1C7.7 4 8.7 5.2 12 6C8.7 6.7 7.7 8 7 11C6.3 8 5.3 6.7 2 6C5.3 5.2 6.3 4 7 1Z"/></svg>
+      <p class="eyebrow" data-i18n="about.eyebrow">عنّي</p>
+      <svg aria-hidden="true" class="about-ornament about-ornament-star-two" focusable="false" viewBox="0 0 14 12"><path pathLength="1" d="M7 1C7.7 4 8.7 5.2 12 6C8.7 6.7 7.7 8 7 11C6.3 8 5.3 6.7 2 6C5.3 5.2 6.3 4 7 1Z"/></svg>
+      <svg aria-hidden="true" class="about-ornament about-ornament-swoop" focusable="false" viewBox="0 0 36 8"><path pathLength="1" d="M1 5C10 1 24 8 35 3"/></svg>
+     </div>
+     <h2 id="aboutTitle"><span data-i18n="about.titleBefore">أفهم المشكلة، ثم أبني </span><span class="heading-highlight" data-i18n="about.titleHighlight">الحل</span><span data-i18n="about.titleAfter">.</span></h2>
     </div>
     <div class="about-layout reveal">
-     <p data-i18n="about.body">
-      أؤمن أن نجاح أي منتج يبدأ بفهم المشكلة قبل كتابة أول سطر برمجي. لذلك أركز على بناء حلول عملية تجمع بين تجربة مستخدم واضحة، وبنية تقنية منظمة، وقابلية للتطوير والتوسع على المدى الطويل.
-     </p>
-     <div aria-label="Working principles" class="principles" data-i18n-aria="about.principles">
-      <div>
-       <span>
-        01
-       </span>
-       <strong data-i18n="about.p1Title">
-        فهم المشكلة أولاً
-       </strong>
-       <p data-i18n="about.p1">
-        كل منتج ناجح يبدأ بفهم احتياجات المستخدم وتحديد المشكلة الحقيقية قبل التفكير في الحل.
-       </p>
-      </div>
-      <div>
-       <span>
-        02
-       </span>
-       <strong data-i18n="about.p2Title">
-        تحويل الأفكار إلى منتجات
-       </strong>
-       <p data-i18n="about.p2">
-        أحوّل الأفكار والمتطلبات إلى منتجات رقمية عملية تقدم قيمة واضحة وتجربة استخدام فعالة.
-       </p>
-      </div>
-      <div>
-       <span>
-        03
-       </span>
-       <strong data-i18n="about.p3Title">
-        بناء أنظمة قابلة للتوسع
-       </strong>
-       <p data-i18n="about.p3">
-        أطوّر أنظمة منظمة وقابلة للنمو تضمن سهولة الصيانة والتطوير مع تطور المنتج مستقبلاً.
-       </p>
-      </div>
+     <p data-i18n="about.body">أحوّل احتياج المستخدم إلى تجربة واضحة، ثم إلى منتج يمكن استخدامه وتطويره.</p>
+     <div aria-label="Product-building sketches" class="about-sketches" data-i18n-aria="about.sketches" data-motion-once>
+      <article class="about-sketch">
+       <h3 data-i18n="about.p1Title">فهم الاحتياج</h3>
+       <svg aria-hidden="true" class="sketch-illustration" viewBox="0 0 360 170" fill="none">
+        <path class="sketch-wash" d="M20 44Q43 15 113 24L198 27Q223 30 215 59L208 142Q203 158 179 153L42 158Q20 151 20 130Z"/>
+        <path class="sketch-page" d="M33 28Q31 24 38 22Q88 19 151 24Q176 26 178 37L175 140Q174 147 164 146L39 150Q32 149 32 141Z"/>
+        <path class="sketch-page sketch-page-second" d="M183 27Q226 21 275 25Q303 27 304 39L301 140Q300 148 290 147L181 143Z"/>
+        <path class="sketch-rule" d="M49 50Q88 48 154 51M48 63Q98 61 147 64M48 80Q79 76 123 80"/>
+        <path class="sketch-note-paper" d="M48 95Q47 91 52 90L128 93L126 119L50 117Z"/>
+        <path class="sketch-rule" d="M59 102Q82 99 115 103M59 110Q80 109 106 111"/>
+        <path class="sketch-note-paper sketch-note-second" d="M61 125L137 127L135 151L60 149Z"/>
+        <path class="sketch-rule" d="M72 134Q95 132 124 135M72 142Q96 140 116 143"/>
+        <path class="sketch-connection draw-path" d="M130 103C168 98 171 78 207 82M137 139C174 139 174 91 207 84"/>
+        <path class="sketch-need" d="M216 70Q249 72 280 86Q292 94 282 110Q263 121 221 112Q205 106 208 91Q208 79 216 70Z"/>
+        <circle class="sketch-need-dot" cx="218" cy="91" r="4"/>
+       </svg>
+       <p class="sketch-note sketch-annotation"><span data-i18n="about.needNotes">ملاحظتان</span><span data-i18n="about.needInsight">تقودان إلى احتياج واحد.</span></p>
+      </article>
+      <article class="about-sketch">
+       <h3 data-i18n="about.p2Title">تصميم التجربة</h3>
+       <svg aria-hidden="true" class="sketch-illustration" viewBox="0 0 360 170" fill="none">
+        <path class="sketch-wash wash-rose" d="M26 39Q36 22 80 23L248 22Q266 26 260 49L253 151Q251 160 230 157L45 159Q27 157 27 143Z"/>
+        <path class="sketch-frame draw-path" d="M37 30Q36 25 44 24L228 27Q236 28 235 36L231 147Q230 153 223 152L42 149Q36 148 37 141Z"/>
+        <path class="sketch-rule" d="M38 47Q139 49 234 46"/>
+        <circle class="sketch-dot" cx="51" cy="37" r="2.7"/><circle class="sketch-dot-muted" cx="62" cy="37" r="2.4"/><circle class="sketch-dot-muted" cx="73" cy="37" r="2.4"/>
+        <path class="sketch-rule" d="M57 65Q105 62 177 66M57 76Q93 75 144 77"/>
+        <path class="sketch-content-shape" d="M57 88Q56 84 62 83L124 85L123 111L59 109Z"/>
+        <path class="sketch-rule" d="M139 88Q177 86 213 89M139 100Q179 99 206 101M139 111Q171 110 193 113"/>
+        <path class="sketch-action" d="M58 120Q58 116 64 116L151 118L150 143L59 141Z"/>
+        <path class="sketch-action-mark" d="M78 130H130"/>
+        <path class="sketch-connection draw-path" d="M151 130C190 138 214 124 257 105"/>
+        <circle class="sketch-need-dot sketch-annotation" cx="262" cy="103" r="4"/>
+       </svg>
+       <p class="sketch-note sketch-annotation" data-i18n="about.uxInsight">أجعل الخطوة التالية واضحة للمستخدم.</p>
+      </article>
+      <article class="about-sketch">
+       <h3 data-i18n="about.p3Title">بناء الحل</h3>
+       <svg aria-hidden="true" class="sketch-illustration" viewBox="0 0 360 170" fill="none">
+        <path class="sketch-wash" d="M18 60Q33 38 70 45L109 46Q124 48 119 67L117 124Q114 137 96 134L37 135Q18 132 18 117Z"/>
+        <path class="sketch-interface" d="M29 54Q29 49 37 49L105 51Q111 52 110 59L108 117Q107 122 101 122L35 120Q29 119 29 113Z"/>
+        <path class="sketch-rule" d="M31 64L109 66M41 76L75 77M41 84L69 85M82 77L99 79M82 86L101 88M40 100L99 102M40 108L80 110"/>
+        <path class="sketch-connection draw-path" d="M116 86C132 77 139 78 151 84M207 84C222 77 230 77 245 85"/>
+        <path class="sketch-service" d="M151 58Q150 53 157 52L201 54Q207 55 206 62L204 112Q203 118 197 117L158 115Q152 114 152 108Z"/>
+        <path class="sketch-service-line" d="M160 69Q177 66 197 70M160 82Q177 79 197 83M160 95Q178 92 197 96"/>
+        <circle class="sketch-service-port" cx="162" cy="69" r="2.4"/><circle class="sketch-service-port" cx="162" cy="82" r="2.4"/><circle class="sketch-service-port" cx="162" cy="95" r="2.4"/>
+        <path class="sketch-database" d="M251 62Q252 54 285 53Q319 54 320 62L318 112Q316 120 285 120Q253 119 252 111Z"/>
+        <path class="sketch-database-line" d="M252 62Q254 71 285 72Q317 71 320 62M252 86Q254 95 285 96Q317 95 319 86"/>
+       </svg>
+       <div class="sketch-parts"><span data-i18n="about.systemInterface">واجهة</span><span data-i18n="about.systemApi">خدمة / API</span><span data-i18n="about.systemData">بيانات</span></div>
+      </article>
      </div>
     </div>
    </section>
    <section aria-labelledby="experienceTitle" class="section-block build-log-section" id="experience">
-    <div class="section-heading reveal">
+    <div class="section-heading reveal journey-heading">
      <p class="eyebrow" data-i18n="experience.eyebrow">
-      02 / الخبرات والتدريب
+      الخبرات والتدريب
      </p>
      <h2 data-i18n="experience.title" id="experienceTitle">
-      سجل البناء
+      رحلتي في التطوير
      </h2>
-     <p class="section-intro" data-i18n="log.intro">
-      ما بنيته، وما تعلّمته في الطريق.
-     </p>
+     <svg aria-hidden="true" class="journey-trail" focusable="false" viewBox="0 0 62 24" fill="none"><path d="M4 18C16 4 31 22 45 8S56 5 58 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="5" cy="18" r="2.4" fill="currentColor"/><circle cx="58" cy="6" r="2.4" fill="currentColor"/></svg>
     </div>
     <div class="build-notebook">
      <article class="log-entry log-primary">
@@ -291,27 +301,28 @@
          <a class="project-link" href="#taskflow">
           TaskFlow ↓
          </a>
+         <figure aria-label="TaskFlow system connections" class="taskflow-sketch" data-i18n-aria="taskflow.mapAria" data-motion-once>
+          <figcaption data-i18n="taskflow.mapLabel">اتصال أجزاء النظام · ليست مراحل زمنية</figcaption>
+          <svg aria-hidden="true" class="taskflow-drawing" viewBox="0 0 600 180" fill="none">
+           <path class="taskflow-wash" d="M22 44Q54 21 143 26L196 33Q216 39 207 63L201 140Q198 155 174 151L39 149Q20 145 20 126Z"/>
+           <path class="taskflow-link draw-path" d="M184 92C211 68 224 70 253 88M383 88C411 68 430 69 453 91"/>
+           <path class="taskflow-interface" d="M39 42Q39 35 47 35L177 40Q184 41 183 48L180 134Q179 140 172 139L45 135Q38 134 39 127Z"/>
+           <path class="taskflow-ink-soft" d="M40 57L182 61M53 48l.5.2m12 .3.5.1m12 .2.5.2"/>
+           <path class="taskflow-ink" d="M53 73L106 75M53 83L91 84M118 72L164 74M118 81L159 83"/>
+           <path class="taskflow-tile" d="M52 94Q52 91 56 91L99 93L98 119L54 117Z"/>
+           <path class="taskflow-tile" d="M108 94Q108 91 112 92L165 94L164 120L110 118Z"/>
+           <path class="taskflow-accent" d="M59 127L137 129"/>
+           <path class="taskflow-service" d="M258 57Q260 49 274 50L358 53Q372 54 372 63L369 116Q367 125 355 123L270 121Q257 120 257 111Z"/>
+           <path class="taskflow-service-line" d="M280 72Q311 68 349 73M279 88Q311 84 350 89M279 104Q311 100 347 105"/>
+           <circle class="taskflow-service-dot" cx="277" cy="72" r="3"/><circle class="taskflow-service-dot" cx="276" cy="88" r="3"/><circle class="taskflow-service-dot" cx="276" cy="104" r="3"/>
+           <path class="taskflow-database" d="M456 61Q458 49 518 49Q580 50 580 62L577 116Q575 128 518 127Q458 126 457 114Z"/>
+           <path class="taskflow-database-line" d="M457 62Q459 75 518 76Q577 75 580 62M458 88Q460 100 518 101Q575 100 578 88"/>
+          </svg>
+          <div class="taskflow-labels"><span data-i18n="taskflow.partInterface">واجهة · React</span><span data-i18n="taskflow.partService">خدمة · API + JWT</span><span data-i18n="taskflow.partData">بيانات · MongoDB</span></div>
+          <p class="log-result"><strong data-i18n="log.result">ما تعلمته وطبّقته</strong><span data-i18n="log.approResult">ربط API موثّق بواجهة متجاوبة، ثم اختبار المنتج ونشره.</span></p>
+         </figure>
         </div>
        </div>
-       <div class="build-diagram">
-        <span data-i18n="log.api">
-         واجهة API
-        </span>
-        <span data-i18n="log.interface">
-         واجهة المستخدم
-        </span>
-        <span data-i18n="log.product">
-         منتج متكامل
-        </span>
-       </div>
-       <p class="log-result">
-        <strong data-i18n="log.result">
-         ما تعلمته وطبّقته
-        </strong>
-        <span data-i18n="log.approResult">
-         ربط API موثّق بواجهة متجاوبة، ثم اختبار المنتج ونشره.
-        </span>
-       </p>
       </div>
      </article>
      <article class="log-entry log-primary field-entry">
@@ -458,7 +469,7 @@
       مشروعان مميزان
      </p>
      <h2 data-i18n="featured.title" id="featuredTitle">
-      من التركيز اليومي إلى العمل الميداني.
+      مشاريع بُنيت للاستخدام الفعلي.
      </h2>
     </div>
     <article class="featured-project taskflow-project" id="taskflow">
@@ -746,175 +757,137 @@
     </div>
     <div class="stack-grid">
      <article class="stack-card">
-      <h3 data-i18n="stack.frontend">
-       الواجهات
-      </h3>
+      <h3 data-i18n="stack.frontend">الواجهات</h3>
+      <p class="stack-description" data-i18n="stack.frontendDesc">بناء واجهات متجاوبة، وتنظيم المسارات والبيانات.</p>
       <ul dir="ltr">
-       <li>
+       <li data-tech-icon="react">
         React 19
        </li>
-       <li>
+       <li data-tech-icon="typescript">
         TypeScript
        </li>
-       <li>
+       <li data-tech-icon="javascript">
         JavaScript
        </li>
-       <li>
-        TanStack Start
-       </li>
-       <li>
-        TanStack Router
-       </li>
-       <li>
-        TanStack Query
-       </li>
-       <li>
+       <li class="tech-family" data-tech-icon="tanstack"><span class="tech-name">TanStack</span><span class="tech-detail" dir="ltr">Start / Router / Query</span></li>
+       <li data-tech-icon="html5">
         HTML
        </li>
-       <li>
+       <li data-tech-icon="css3">
         CSS
        </li>
-       <li>
+       <li data-tech-icon="tailwindcss">
         Tailwind CSS
        </li>
-       <li>
+       <li data-tech-icon="bootstrap">
         Bootstrap
        </li>
-       <li>
-        Responsive Design
-       </li>
-       <li>
+       <li data-tech-icon="radixui">
         Radix UI
        </li>
       </ul>
+      <div class="practice-area">
+       <h4 data-i18n="stack.practices">Practices</h4>
+       <ul class="practice-list" dir="ltr"><li>Responsive Design</li></ul>
+      </div>
      </article>
      <article class="stack-card">
-      <h3 data-i18n="stack.backend">
-       الخوادم وواجهات API
-      </h3>
+      <h3 data-i18n="stack.backend">الخلفية والبيانات</h3>
+      <p class="stack-description" data-i18n="stack.backendDesc">واجهات API موثوقة، ومصادقة، وتخزين منظم للبيانات.</p>
       <ul dir="ltr">
-       <li>
+       <li data-tech-icon="nodedotjs">
         Node.js
        </li>
-       <li>
+       <li data-tech-icon="express">
         Express.js
        </li>
-       <li>
+       <li data-tech-icon="nestjs">
         NestJS
        </li>
-       <li>
+       <li data-tech-icon="php">
         PHP
        </li>
-       <li>
-        REST APIs
-       </li>
-       <li>
+       <li data-tech-icon="jsonwebtokens">
         JWT Authentication
        </li>
-       <li>
+       <li data-tech-icon="swagger">
         Swagger/OpenAPI
        </li>
-      </ul>
-     </article>
-     <article class="stack-card">
-      <h3 data-i18n="stack.db">
-       قواعد البيانات
-      </h3>
-      <ul dir="ltr">
-       <li>
-        MongoDB
-       </li>
-       <li>
-        Mongoose
-       </li>
-       <li>
+       <li class="tech-family" data-tech-icon="mongodb"><span class="tech-name">MongoDB</span><span class="tech-detail" dir="ltr">Mongoose</span></li>
+       <li data-tech-icon="postgresql">
         PostgreSQL
        </li>
-       <li>
+       <li data-tech-icon="mysql">
         MySQL
        </li>
-       <li>
-        Database Design
-       </li>
+       <li data-tech-icon="bun">Bun</li>
       </ul>
+      <div class="practice-area">
+       <h4 data-i18n="stack.practices">Practices</h4>
+       <ul class="practice-list" dir="ltr"><li>REST APIs</li><li>Database Design</li></ul>
+      </div>
      </article>
      <article class="stack-card">
-      <h3 data-i18n="stack.testing">
-       الاختبار والنشر
-      </h3>
+      <h3 data-i18n="stack.testing">الاختبار والنشر</h3>
+      <p class="stack-description" data-i18n="stack.testingDesc">التحقق من السلوك، ثم تجهيز الإصدارات ونشرها.</p>
       <ul dir="ltr">
-       <li>
+       <li data-tech-icon="vitest">
         Vitest
        </li>
-       <li>
-        API Testing
-       </li>
-       <li>
-        TypeScript Checks
-       </li>
-       <li>
+       <li data-tech-icon="git">
         Git
        </li>
-       <li>
+       <li data-tech-icon="github">
         GitHub
        </li>
-       <li>
+       <li data-tech-icon="vercel">
         Vercel
        </li>
-       <li>
+       <li data-tech-icon="render">
         Render
        </li>
-       <li>
-        Bun
-       </li>
       </ul>
+      <div class="practice-area">
+       <h4 data-i18n="stack.practices">Practices</h4>
+       <ul class="practice-list" dir="ltr"><li>API Testing</li><li>TypeScript Checks</li></ul>
+      </div>
      </article>
      <article class="stack-card">
-      <h3 data-i18n="stack.design">
-       المنتج والتصميم
-      </h3>
+      <h3 data-i18n="stack.design">المنتج والتصميم</h3>
+      <p class="stack-description" data-i18n="stack.designDesc">استكشاف الاحتياج، وتصميم واجهات قابلة للاستخدام.</p>
       <ul dir="ltr">
-       <li>
+       <li data-tech-icon="figma">
         Figma
        </li>
-       <li>
-        UI/UX
-       </li>
-       <li>
-        Prototyping
-       </li>
-       <li>
-        Accessibility
-       </li>
-       <li>
-        User-Centered Design
-       </li>
       </ul>
+      <div class="practice-area">
+       <h4 data-i18n="stack.practices">Practices</h4>
+       <ul class="practice-list" dir="ltr"><li>UI/UX</li><li>Prototyping</li><li>Accessibility</li><li>User-Centered Design</li></ul>
+      </div>
      </article>
      <article class="stack-card">
-      <h3 data-i18n="stack.data">
-       البرمجة والبيانات
-      </h3>
+      <h3 data-i18n="stack.data">البرمجة والبيانات</h3>
+      <p class="stack-description" data-i18n="stack.dataDesc">تحليل البيانات وبناء نماذج وبرمجيات مساندة.</p>
       <ul dir="ltr">
-       <li>
+       <li data-tech-icon="python">
         Python
        </li>
-       <li>
+       <li data-tech-icon="java">
         Java
        </li>
-       <li>
+       <li data-tech-icon="cplusplus">
         C++
        </li>
-       <li>
+       <li data-tech-icon="pandas">
         Pandas
        </li>
-       <li>
+       <li data-tech-icon="streamlit">
         Streamlit
        </li>
-       <li>
+       <li data-tech-icon="tensorflow">
         TensorFlow
        </li>
-       <li>
+       <li data-tech-icon="keras">
         Keras
        </li>
       </ul>
@@ -926,9 +899,8 @@
      <div class="contact-copy">
      <div>
       <h2 data-i18n="contact.title" id="contactTitle">
-       متاحة لفرص عمل في هندسة البرمجيات
+       لنصنع منتجًا مفيدًا.
       </h2>
-      <p class="contact-note" data-i18n="contact.note">لنصنع منتجًا مفيدًا.</p>
      </div>
      <div class="contact-links">
       <a aria-label="البريد الإلكتروني" class="contact-link" data-i18n-aria="email" href="mailto:manalBafaraj@outlook.com">

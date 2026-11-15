@@ -1,26 +1,39 @@
 const translations = {
   "ar": {
     "nav.about": "عنّي",
-    "nav.experience": "سجل البناء",
+    "nav.experience": "رحلتي في التطوير",
     "nav.featured": "أعمال مختارة",
     "nav.projects": "المشاريع",
     "nav.identity": "الأدوات",
     "nav.contact": "تواصل",
     "hero.eyebrow": "مهندسة برمجيات Full‑Stack",
-    "hero.title": "أبني منتجات رقمية واضحة، من الفكرة إلى الإطلاق.",
+    "hero.titleBefore": "أبني منتجات رقمية واضحة، من ",
+    "hero.idea": "الفكرة",
+    "hero.titleAfter": " إلى الإطلاق.",
     "hero.lead": "أجمع بين تطوير الواجهات والـBackend وتصميم تجربة المستخدم لبناء منتجات متكاملة وسهلة الاستخدام.",
     "hero.primary": "استعرض أعمالي",
     "about.eyebrow": "عنّي",
-    "about.title": "أفهم المشكلة، ثم أبني الحل.",
-    "about.body": "أؤمن أن نجاح أي منتج يبدأ بفهم المشكلة قبل كتابة أول سطر برمجي. لذلك أركز على بناء حلول عملية تجمع بين تجربة مستخدم واضحة، وبنية تقنية منظمة، وقابلية للتطوير والتوسع على المدى الطويل.",
-    "about.p1Title": "فهم المشكلة أولاً",
+    "about.titleBefore": "أفهم المشكلة، ثم أبني ",
+    "about.titleHighlight": "الحل",
+    "about.titleAfter": ".",
+    "about.body": "أحوّل احتياج المستخدم إلى تجربة واضحة، ثم إلى منتج يمكن استخدامه وتطويره.",
+    "about.sketches": "اسكتشات توضح فهم الاحتياج وتصميم التجربة وبناء النظام",
+    "about.needNotes": "ملاحظتان",
+    "about.needInsight": "تقودان إلى احتياج واحد.",
+    "about.uxInsight": "أجعل الخطوة التالية واضحة للمستخدم.",
+    "about.systemInterface": "واجهة",
+    "about.systemView": "عرض البيانات",
+    "about.systemApi": "API",
+    "about.systemLogic": "منطق الطلب",
+    "about.systemData": "قاعدة البيانات",
+    "about.p1Title": "فهم الاحتياج",
     "about.p1": "كل منتج ناجح يبدأ بفهم احتياجات المستخدم وتحديد المشكلة الحقيقية قبل التفكير في الحل.",
-    "about.p2Title": "تحويل الأفكار إلى منتجات",
+    "about.p2Title": "تصميم تجربة مفهومة",
     "about.p2": "أحوّل الأفكار والمتطلبات إلى منتجات رقمية عملية تقدم قيمة واضحة وتجربة استخدام فعالة.",
-    "about.p3Title": "بناء أنظمة قابلة للتوسع",
+    "about.p3Title": "بناء حل مترابط",
     "about.p3": "أطوّر أنظمة منظمة وقابلة للنمو تضمن سهولة الصيانة والتطوير مع تطور المنتج مستقبلاً.",
-    "experience.eyebrow": "02 / الخبرات والتدريب",
-    "experience.title": "سجل البناء",
+    "experience.eyebrow": "الخبرات والتدريب",
+    "experience.title": "رحلتي في التطوير",
     "experience.tamheerDate": "أكتوبر 2025 — أبريل 2026",
     "experience.tamheerTitle": "Software Engineer Trainee (Tamheer Program)",
     "experience.tamheerCompany": "Institute of Hajj and Umrah Research – Umm Al-Qura University",
@@ -38,7 +51,7 @@ const translations = {
     "experience.digitalCompany": "Digital Upgrade ME",
     "experience.digitalText": "ساهمت في تطوير واختبار تطبيقات ويب باستخدام HTML وCSS وJavaScript وPython وPHP، والعمل على الواجهات والـBackend، مع استخدام Git وGitHub والعمل ضمن بيئة Agile.",
     "featured.eyebrow": "مشروعان مميزان",
-    "featured.title": "من التركيز اليومي إلى العمل الميداني.",
+    "featured.title": "مشاريع بُنيت للاستخدام الفعلي.",
     "featured.clientKicker": "تم تطويره لصالح",
     "featured.clientName": "معهد خادم الحرمين الشريفين لأبحاث الحج والعمرة",
     "featured.label": "استُخدم ميدانيًا بنجاح · موسم الحج 2026",
@@ -72,11 +85,10 @@ const translations = {
     "identity.eyebrow": "أدواتي التقنية",
     "identity.title": "أدوات أستخدمها لبناء المنتج كاملًا.",
     "contact.eyebrow": "تواصل",
-    "contact.title": "متاحة لفرص عمل في هندسة البرمجيات",
+    "contact.title": "لنصنع منتجًا مفيدًا.",
     "footer.top": "العودة للأعلى",
     "footer.copy": "صُنع بعناية - منال 2026",
     "hero.secondary": "تواصل معي",
-    "hero.available": "متاحة لفرص عمل في هندسة البرمجيات",
     "experience.approTitle": "متدربة تطوير Full-Stack | AppRo8 | أكتوبر – نوفمبر 2026",
     "experience.approType": "تدريب قائم على المشاريع · مهمتان عمليتان",
     "experience.task1": "المهمة ١ — تطوير الـBackend",
@@ -84,6 +96,11 @@ const translations = {
     "experience.task2": "المهمة ٢ — الواجهات ومنتج Full-Stack",
     "experience.task2Text": "تحويل المتطلبات إلى واجهات React وTypeScript متجاوبة: لوحة تحكم وإدارة مهام وفلاتر وتجربة هاتف محسّنة. تطوير TaskFlow إلى منتج Full-Stack مكتمل، مع الاختبارات والتوثيق والنشر على Vercel.",
     "taskflow.title": "TaskFlow — مساحة لإنجاز ما يهم.",
+    "taskflow.mapAria": "رسم يوضح اتصال واجهة TaskFlow بخدمة API وقاعدة بيانات MongoDB.",
+    "taskflow.mapLabel": "كيف تتصل أجزاء TaskFlow",
+    "taskflow.partInterface": "واجهة · React",
+    "taskflow.partService": "خدمة · API + JWT",
+    "taskflow.partData": "بيانات · MongoDB",
     "taskflow.label": "01 / منتج Full-Stack · منشور على Vercel",
     "taskflow.description": "منتج لإدارة المهام والإنتاجية، مع مصادقة JWT ومهام آمنة ومنفصلة لكل مستخدم. طوّرته من الواجهة إلى الـAPI وقاعدة البيانات.",
     "taskflow.f1": "إنشاء المهام وتعديلها وحذفها وإعادة فتحها؛ قوائم تحقق وأولويات وتصنيفات ومواعيد تسليم.",
@@ -98,7 +115,6 @@ const translations = {
     "language": "التبديل إلى الإنجليزية",
     "nav.label": "التنقل الرئيسي",
     "home.label": "Manal Bafaraj home",
-    "contact.note": "لنصنع منتجًا مفيدًا.",
     "contact.identityName": "منال بافرج",
     "contact.identityRole": "مهندسة برمجيات Full‑Stack",
     "contact.identitySignature": "أبني بعناية، من الفكرة إلى الأثر.",
@@ -115,19 +131,23 @@ const translations = {
     "alt.anime": "واجهة تصفح AnimeGo",
     "alt.sport": "تصميم واجهات تطبيق GoSport",
     "stack.frontend": "الواجهات",
-    "stack.backend": "الخوادم وواجهات API",
-    "stack.db": "قواعد البيانات",
+    "stack.frontendDesc": "بناء واجهات متجاوبة، وتنظيم المسارات والبيانات.",
+    "stack.backend": "الخلفية والبيانات",
+    "stack.backendDesc": "واجهات API موثوقة، ومصادقة، وتخزين منظم للبيانات.",
     "stack.testing": "الاختبار والنشر",
+    "stack.testingDesc": "التحقق من السلوك، ثم تجهيز الإصدارات ونشرها.",
     "stack.design": "المنتج والتصميم",
+    "stack.designDesc": "استكشاف الاحتياج، وتصميم واجهات قابلة للاستخدام.",
     "stack.data": "البرمجة والبيانات",
+    "stack.dataDesc": "تحليل البيانات وبناء نماذج وبرمجيات مساندة.",
+    "stack.practices": "ممارسات",
     "notebook.title": "دفتر بناء المنتجات",
-    "hero.hello": "مرحبًا، أنا منال 👋",
+    "hero.hello": "مرحبًا، أنا منال",
     "notebook.note": "ملاحظات من التصميم إلى التنفيذ",
     "notebook.idea": "فهم الفكرة",
     "notebook.build": "تصميم وبناء",
     "notebook.ship": "اختبار وإطلاق",
     "notebook.stamp": "أعمال مختارة · من دفتر منال",
-    "log.intro": "ما بنيته، وما تعلّمته في الطريق.",
     "log.main": "سجل تطوير",
     "log.field": "ملاحظات من الميدان",
     "log.learn": "قصاصة تعلّم",
@@ -143,7 +163,6 @@ const translations = {
     "log.task2": "المهمة ٢ · منتج TaskFlow",
     "log.api": "واجهة API",
     "log.interface": "واجهة المستخدم",
-    "log.product": "منتج متكامل",
     "log.surveys": "استبيان",
     "log.observers": "راصدًا ميدانيًا",
     "log.readSaden": "شاهد سادن",
@@ -168,26 +187,39 @@ const translations = {
   },
   "en": {
     "nav.about": "About",
-    "nav.experience": "Build Log",
+    "nav.experience": "My Journey",
     "nav.featured": "Selected work",
     "nav.projects": "Projects",
     "nav.identity": "Stack",
     "nav.contact": "Contact",
     "hero.eyebrow": "Full-Stack Software Engineer",
-    "hero.title": "I build clear digital products, from idea to launch.",
+    "hero.titleBefore": "I build clear digital products, from ",
+    "hero.idea": "idea",
+    "hero.titleAfter": " to launch.",
     "hero.lead": "I bring frontend, backend, and user experience design together to build complete, easy-to-use products.",
     "hero.primary": "View my work",
     "about.eyebrow": "About",
-    "about.title": "Understand the problem. Build the solution.",
-    "about.body": "I believe that any product's success starts with understanding the problem before writing the first line of code. That's why I focus on practical solutions that combine clear user experience, a well-structured technical foundation, and long-term scalability.",
-    "about.p1Title": "Understand the problem first",
+    "about.titleBefore": "Understand the problem. Build the ",
+    "about.titleHighlight": "solution",
+    "about.titleAfter": ".",
+    "about.body": "I turn user needs into clear experiences, then into products people can use and evolve.",
+    "about.sketches": "Sketches showing user needs, experience design, and connected systems",
+    "about.needNotes": "Two observations",
+    "about.needInsight": "point to one user need.",
+    "about.uxInsight": "I make the next step clear for the user.",
+    "about.systemInterface": "Interface",
+    "about.systemView": "Data views",
+    "about.systemApi": "API",
+    "about.systemLogic": "Request logic",
+    "about.systemData": "Database",
+    "about.p1Title": "Understand the need",
     "about.p1": "Every successful product starts with understanding user needs and identifying the real problem before thinking about the solution.",
-    "about.p2Title": "Turning ideas into products",
+    "about.p2Title": "Shape a clear experience",
     "about.p2": "I turn ideas and requirements into practical digital products that deliver clear value and effective user experiences.",
-    "about.p3Title": "Building scalable systems",
+    "about.p3Title": "Build a connected solution",
     "about.p3": "I build well-structured, scalable systems that remain maintainable as the product evolves.",
-    "experience.eyebrow": "02 / Experience & training",
-    "experience.title": "Build Log",
+    "experience.eyebrow": "Experience & training",
+    "experience.title": "My Journey",
     "experience.tamheerDate": "Oct 2025 – Apr 2026",
     "experience.tamheerTitle": "Software Engineer Trainee (Tamheer Program)",
     "experience.tamheerCompany": "Institute of Hajj and Umrah Research – Umm Al-Qura University",
@@ -205,7 +237,7 @@ const translations = {
     "experience.digitalCompany": "Digital Upgrade ME",
     "experience.digitalText": "Contributed to developing and testing web applications using HTML, CSS, JavaScript, Python, and PHP across frontend and backend work, using Git, GitHub, and Agile workflows.",
     "featured.eyebrow": "Selected work",
-    "featured.title": "From everyday focus to field operations.",
+    "featured.title": "Projects built for real use.",
     "featured.clientKicker": "Developed for",
     "featured.clientName": "The Custodian of the Two Holy Mosques Institute for Hajj and Umrah Research",
     "featured.label": "Used successfully in the field · Hajj 2026",
@@ -239,11 +271,10 @@ const translations = {
     "identity.eyebrow": "My product stack",
     "identity.title": "A stack for the whole product.",
     "contact.eyebrow": "Contact",
-    "contact.title": "Open to Software Engineering opportunities",
+    "contact.title": "Let’s build something useful.",
     "footer.top": "Back to top",
     "footer.copy": "Crafted with care - Manal 2026",
     "hero.secondary": "Contact me",
-    "hero.available": "Open to Software Engineering opportunities",
     "experience.approTitle": "Full-Stack Developer Trainee | AppRo8 | Oct – Nov 2026",
     "experience.approType": "Project-Based Training · Two practical tasks",
     "experience.task1": "Task 1 — Backend Development",
@@ -251,6 +282,11 @@ const translations = {
     "experience.task2": "Task 2 — Frontend and Full-Stack Product",
     "experience.task2Text": "Turned requirements into responsive React and TypeScript interfaces: a dashboard, task management, filters, and an improved mobile experience. Developed TaskFlow into a complete full-stack product with tests, documentation, and Vercel deployment.",
     "taskflow.title": "TaskFlow — room to focus on what matters.",
+    "taskflow.mapAria": "A sketch showing the TaskFlow interface connected to an API service and MongoDB.",
+    "taskflow.mapLabel": "How TaskFlow connects",
+    "taskflow.partInterface": "Interface · React",
+    "taskflow.partService": "Service · API + JWT",
+    "taskflow.partData": "Data · MongoDB",
     "taskflow.label": "01 / Full-Stack product · Live on Vercel",
     "taskflow.description": "A task and productivity product with JWT authentication and secure, isolated tasks for every user. Developed across the interface, API, and database.",
     "taskflow.f1": "Create, edit, delete, and reopen tasks; checklists, priorities, categories, and due dates.",
@@ -265,7 +301,6 @@ const translations = {
     "language": "Switch to Arabic",
     "nav.label": "Primary navigation",
     "home.label": "Manal Bafaraj home",
-    "contact.note": "Let’s build something useful.",
     "contact.identityName": "Manal Bafaraj",
     "contact.identityRole": "Full-Stack Software Engineer",
     "contact.identitySignature": "Built with care. From idea to impact.",
@@ -282,19 +317,23 @@ const translations = {
     "alt.anime": "AnimeGo browsing interface",
     "alt.sport": "GoSport app interface design",
     "stack.frontend": "Frontend",
-    "stack.backend": "Backend",
-    "stack.db": "Databases",
-    "stack.testing": "Testing and Deployment",
+    "stack.frontendDesc": "Building responsive interfaces, routes, and data views.",
+    "stack.backend": "Backend and Data",
+    "stack.backendDesc": "Reliable APIs, authentication, and structured data storage.",
+    "stack.testing": "Testing and Delivery",
+    "stack.testingDesc": "Checking behavior, preparing releases, and shipping products.",
     "stack.design": "Product and Design",
-    "stack.data": "Programming and Data",
+    "stack.designDesc": "Exploring user needs and shaping usable interfaces.",
+    "stack.data": "Programming and Analysis",
+    "stack.dataDesc": "Analyzing data and building supporting models and software.",
+    "stack.practices": "Practices",
     "notebook.title": "Product Building Notebook",
-    "hero.hello": "Hello, I’m Manal 👋",
+    "hero.hello": "Hello, I’m Manal",
     "notebook.note": "Notes from design to implementation",
     "notebook.idea": "Understand",
     "notebook.build": "Design & build",
     "notebook.ship": "Test & ship",
     "notebook.stamp": "Selected work · From Manal’s notebook",
-    "log.intro": "What I built, and what I learned along the way.",
     "log.main": "Development entry",
     "log.field": "Field notes",
     "log.learn": "Learning note",
@@ -310,7 +349,6 @@ const translations = {
     "log.task2": "Task 2 · TaskFlow Full-Stack Product",
     "log.api": "API",
     "log.interface": "Interface",
-    "log.product": "Product",
     "log.surveys": "surveys",
     "log.observers": "field observers",
     "log.readSaden": "Explore Saden",
@@ -337,6 +375,18 @@ const translations = {
 const navToggle = document.getElementById('navToggle');
 const navPanel = document.getElementById('navPanel');
 const langToggle = document.getElementById('langToggle');
+document.querySelectorAll('.stack-card li[data-tech-icon]').forEach(item => {
+  const icon = document.createElement('img');
+  icon.className = 'tech-logo';
+  icon.src = `img/tech/${item.dataset.techIcon}.svg`;
+  icon.alt = '';
+  icon.setAttribute('aria-hidden','true');
+  icon.width = 20;
+  icon.height = 20;
+  icon.loading = 'lazy';
+  icon.decoding = 'async';
+  item.prepend(icon);
+});
 let lang = 'ar';
 try { lang = localStorage.getItem('portfolio_lang') === 'en' ? 'en' : 'ar'; } catch {}
 function menuLabel() {
@@ -528,13 +578,18 @@ document.querySelectorAll('a[href="#top"]').forEach(link => {
     window.scrollTo({ top: 0, behavior: motionQuery.matches ? 'auto' : 'smooth' });
   });
 });
-if ('IntersectionObserver' in window) {
-  const aboutObserver = new IntersectionObserver(entries => {
-    if (entries.some(entry => entry.isIntersecting)) {
-      if (!motionQuery.matches) document.querySelector('.principles').classList.add('noted');
-      aboutObserver.disconnect();
-    }
-  }, { threshold: 0.2 });
-  aboutObserver.observe(document.getElementById('about'));
+if ('IntersectionObserver' in window && !motionQuery.matches) {
+  const motionTargets = [...document.querySelectorAll('[data-motion-once]')];
+  const motionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-seen');
+      motionObserver.unobserve(entry.target);
+    });
+  }, { threshold: 0.16 });
+  motionTargets.forEach(target => {
+    target.classList.add('motion-ready');
+    motionObserver.observe(target);
+  });
 }
 applyLanguage(lang);
