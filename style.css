@@ -1181,13 +1181,17 @@ body.en .contact-identity-signature { font-family: Georgia, serif; }
 .taskflow-sketch.motion-ready:not(.is-seen) .log-result,.about-sketches.motion-ready:not(.is-seen) .sketch-annotation { opacity: 0; }
 .taskflow-sketch.motion-ready .draw-path,.about-sketches.motion-ready .draw-path { stroke-dasharray: 500; stroke-dashoffset: 500; }
 .taskflow-sketch.motion-ready.is-seen .draw-path,.about-sketches.motion-ready.is-seen .draw-path { stroke-dashoffset: 0; transition: stroke-dashoffset .72s cubic-bezier(.22,.72,.2,1); }
-.about-sketches.motion-ready.is-seen .draw-path { transition-duration: 1.2s; }
-.about-sketches.motion-ready.is-seen .about-sketch:nth-child(2) .draw-path { transition-delay: .18s; }
-.about-sketches.motion-ready.is-seen .about-sketch:nth-child(3) .draw-path { transition-delay: .36s; }
+.about-sketches.motion-ready .sketch-illustration { filter: grayscale(1); opacity: .38; transition: filter .65s ease, opacity .55s ease; }
+.about-sketches.motion-ready.is-seen .sketch-illustration { filter: grayscale(0); opacity: 1; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(2) .sketch-illustration { transition-delay: 1.35s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(3) .sketch-illustration { transition-delay: 2.7s; }
+.about-sketches.motion-ready.is-seen .draw-path { transition-duration: .9s; transition-delay: .05s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(2) .draw-path { transition-delay: 1.4s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(3) .draw-path { transition-delay: 2.75s; }
 .taskflow-sketch.motion-ready.is-seen .log-result,.about-sketches.motion-ready.is-seen .sketch-annotation { opacity: 1; transition: opacity .25s ease .7s; }
 .about-sketches.motion-ready.is-seen .sketch-annotation { transition-duration: .32s; transition-delay: 1s; }
-.about-sketches.motion-ready.is-seen .about-sketch:nth-child(2) .sketch-annotation { transition-delay: 1.18s; }
-.about-sketches.motion-ready.is-seen .about-sketch:nth-child(3) .sketch-annotation { transition-delay: 1.36s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(2) .sketch-annotation { transition-delay: 2.35s; }
+.about-sketches.motion-ready.is-seen .about-sketch:nth-child(3) .sketch-annotation { transition-delay: 3.7s; }
 .taskflow-sketch .log-result { margin-top: 9px; padding: 8px 10px; gap: 8px; font-size: 13px; line-height: 1.6; }
 .taskflow-sketch .log-result strong { font-size: 12px; }
 @media (max-width: 760px) {
