@@ -18,7 +18,7 @@ I'm a **Full-Stack Software Engineer** building useful digital products from ide
 
 This portfolio is a **Product Building Notebook**: selected work, development notes, and the experience behind the products. Its *Idea in Motion* identity brings together deep purple, warm rose, and a small golden spark on a quiet paper grid.
 
-![Current portfolio preview with the Idea in Motion identity](img/portfolio-preview.webp)
+![Current Product Building Notebook portfolio preview, with Manal's bilingual hero and notebook process notes](img/portfolio-preview.webp)
 
 ## Featured work
 

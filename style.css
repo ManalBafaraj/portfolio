@@ -1412,3 +1412,19 @@ section,.featured-project { scroll-margin-top: 0; }
 @media (prefers-reduced-motion: reduce) {
   .language-button { transition: none; }
 }
+
+/* Keep the hero, its process note, and the next section in one calm rhythm. */
+.hero { padding-top: 22px; padding-bottom: 30px; }
+.hero-showcase { padding-bottom: 54px; }
+.notebook-process { gap: 24px; padding-block: 8px 12px; margin: -28px 0 6px; }
+.notebook-process ol { gap: 32px; }
+.notebook-process li + li::before { inset-inline-start: -24px; width: 14px; }
+.notebook-process + .notebook-about { padding-top: 34px; }
+@media (max-width: 600px) {
+  .hero { padding: 20px 0 22px; gap: 24px; }
+  .hero-showcase { padding-top: 26px; padding-bottom: 56px; margin-top: 8px; }
+  .notebook-process { gap: 10px; padding-block: 4px 10px; margin: -12px 0 4px; }
+  .notebook-process ol { gap: 20px; }
+  .notebook-process li + li::before { inset-inline-start: -15px; width: 8px; }
+  .notebook-process + .notebook-about { padding-top: 22px; }
+}
