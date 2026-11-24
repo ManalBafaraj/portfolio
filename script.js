@@ -83,7 +83,7 @@ const translations = {
     "projects.paper": "عرض الورقة البحثية",
     "projects.prototype": "Figma prototype",
     "identity.eyebrow": "أدواتي التقنية",
-    "identity.title": "أدوات أستخدمها لبناء المنتج كاملًا.",
+    "identity.title": "أدوات استخدمها لبناء المنتج كاملًا.",
     "contact.eyebrow": "تواصل",
     "contact.title": "لنصنع منتجًا مفيدًا.",
     "footer.top": "العودة للأعلى",
@@ -131,17 +131,26 @@ const translations = {
     "alt.anime": "واجهة تصفح AnimeGo",
     "alt.sport": "تصميم واجهات تطبيق GoSport",
     "stack.frontend": "الواجهات",
-    "stack.frontendDesc": "بناء واجهات متجاوبة، وتنظيم المسارات والبيانات.",
+    "stack.frontendDesc": "أحوّل التصميم إلى واجهة متفاعلة.",
     "stack.backend": "الخلفية والبيانات",
-    "stack.backendDesc": "واجهات API موثوقة، ومصادقة، وتخزين منظم للبيانات.",
+    "stack.backendDesc": "أوصل الواجهة بالخدمات وقواعد البيانات.",
     "stack.testing": "الاختبار والنشر",
-    "stack.testingDesc": "التحقق من السلوك، ثم تجهيز الإصدارات ونشرها.",
+    "stack.testingDesc": "أفحص التغييرات وأجهزها للنشر.",
     "stack.design": "المنتج والتصميم",
-    "stack.designDesc": "استكشاف الاحتياج، وتصميم واجهات قابلة للاستخدام.",
+    "stack.designDesc": "أحدد الاحتياج وأصمم الفكرة الأولى.",
     "stack.data": "البرمجة والتحليل",
-    "stack.dataDesc": "تحليل البيانات وبناء نماذج وبرمجيات مساندة.",
+    "stack.dataDesc": "أحلل البيانات وأبني النماذج.",
     "stack.practices": "ممارسات",
     "stack.jwt": "مصادقة JWT",
+    "stack.phaseStart": "أبدأ هنا",
+    "stack.phaseInterface": "أبني الواجهة",
+    "stack.phaseConnect": "أوصل النظام",
+    "stack.phaseUnderstand": "أفهم البيانات",
+    "stack.phaseShip": "أختبر وأنشر",
+    "stack.howWork": "كيف أعمل",
+    "stack.practiceEyebrow": "ملاحظة على الهامش",
+    "stack.practiceDesc": "ممارسات عملية ترافقني خلال بناء المنتج.",
+    "practice.typeSafety": "سلامة الأنواع",
     "practice.responsiveDesign": "تصميم متجاوب",
     "practice.restApis": "واجهات REST",
     "practice.databaseDesign": "تصميم قواعد البيانات",
@@ -278,8 +287,8 @@ const translations = {
     "projects.github": "GitHub",
     "projects.paper": "View Research Paper",
     "projects.prototype": "Figma prototype",
-    "identity.eyebrow": "My product stack",
-    "identity.title": "A stack for the whole product.",
+    "identity.eyebrow": "Technical Toolkit",
+    "identity.title": "Tools that move with me from idea to impact.",
     "contact.eyebrow": "Contact",
     "contact.title": "Let’s build something useful.",
     "footer.top": "Back to top",
@@ -327,17 +336,26 @@ const translations = {
     "alt.anime": "AnimeGo browsing interface",
     "alt.sport": "GoSport app interface design",
     "stack.frontend": "Frontend",
-    "stack.frontendDesc": "Building responsive interfaces, routes, and data views.",
+    "stack.frontendDesc": "Turning designs into responsive interfaces.",
     "stack.backend": "Backend and Data",
-    "stack.backendDesc": "Reliable APIs, authentication, and structured data storage.",
+    "stack.backendDesc": "Connecting interfaces to APIs and databases.",
     "stack.testing": "Testing and Delivery",
-    "stack.testingDesc": "Checking behavior, preparing releases, and shipping products.",
+    "stack.testingDesc": "Checking changes and preparing them for release.",
     "stack.design": "Product and Design",
-    "stack.designDesc": "Exploring user needs and shaping usable interfaces.",
+    "stack.designDesc": "Shaping the idea and the user experience.",
     "stack.data": "Programming and Analysis",
-    "stack.dataDesc": "Analyzing data and building supporting models and software.",
+    "stack.dataDesc": "Exploring data and building models.",
     "stack.practices": "Practices",
     "stack.jwt": "JWT Authentication",
+    "stack.phaseStart": "Start here",
+    "stack.phaseInterface": "Build the interface",
+    "stack.phaseConnect": "Connect the system",
+    "stack.phaseUnderstand": "Explore the data",
+    "stack.phaseShip": "Test and ship",
+    "stack.howWork": "How I work",
+    "stack.practiceEyebrow": "A note in the margin",
+    "stack.practiceDesc": "The practices I bring into each build.",
+    "practice.typeSafety": "Type safety",
     "practice.responsiveDesign": "Responsive design",
     "practice.restApis": "REST APIs",
     "practice.databaseDesign": "Database design",
@@ -396,16 +414,16 @@ const navToggle = document.getElementById('navToggle');
 const navPanel = document.getElementById('navPanel');
 const langToggle = document.getElementById('langToggle');
 document.querySelectorAll('.stack-card li[data-tech-icon]').forEach(item => {
-  const icon = document.createElement('img');
+  const tile = document.createElement('span');
+  tile.className = 'tech-mark';
+  tile.setAttribute('aria-hidden','true');
+  const toolIndex = [...item.parentElement.children].indexOf(item);
+  tile.style.setProperty('--tool-delay', `${Math.min(toolIndex, 8) * 42}ms`);
+  const icon = document.createElement('span');
   icon.className = 'tech-logo';
-  icon.src = `img/tech/${item.dataset.techIcon}.svg`;
-  icon.alt = '';
-  icon.setAttribute('aria-hidden','true');
-  icon.width = 20;
-  icon.height = 20;
-  icon.loading = 'lazy';
-  icon.decoding = 'async';
-  item.prepend(icon);
+  icon.style.setProperty('--tech-logo', `url("img/tech/${item.dataset.techIcon}.svg")`);
+  tile.append(icon);
+  item.prepend(tile);
 });
 let lang = 'ar';
 try { lang = localStorage.getItem('portfolio_lang') === 'en' ? 'en' : 'ar'; } catch {}

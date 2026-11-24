@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="img/identity/mark-color.svg" width="76" height="76" alt="Manal Bafaraj — Idea in Motion" />
+  <img src="img/identity/mark-color.svg" width="72" height="72" alt="Manal Bafaraj — Idea in Motion" />
   <h1>Manal Bafaraj</h1>
   <p><strong>Product Building Portfolio</strong></p>
   <p>Built with care. From idea to impact.</p>
@@ -16,15 +16,15 @@
 
 I'm a **Full-Stack Software Engineer** building useful digital products from idea to launch. My work connects frontend, backend, and UI/UX through a thoughtful, practical approach to product development.
 
-This portfolio is a **Product Building Notebook**: selected work, development notes, and the experience behind the products. Its *Idea in Motion* identity brings together deep purple, warm rose, and a small golden spark on a quiet paper grid.
+This **Product Building Notebook** brings together selected projects, development notes, and a technical toolkit organized around the work of building a product—from design and interfaces to connected systems, data, testing, and delivery.
 
-![Current Product Building Notebook portfolio preview, with Manal's bilingual hero and notebook process notes](img/portfolio-preview.webp)
+![Current Technical Toolkit section from Manal Bafaraj's Product Building Portfolio](img/portfolio-preview.webp)
 
 ## Featured work
 
 ### TaskFlow
 
-A full-stack task and productivity product built during AppRo8 training and published on Vercel for people to try. It combines secure user-specific tasks, checklists, priorities, a calendar, and persistent focus sessions in a responsive experience.
+A full-stack task and productivity product built during AppRo8 training and published on Vercel. It brings together secure user-specific tasks, checklists, priorities, a calendar, and persistent focus sessions in a responsive experience.
 
 **React · TypeScript · TanStack · Express · MongoDB**
 
@@ -32,7 +32,7 @@ A full-stack task and productivity product built during AppRo8 training and publ
 
 ### Saden
 
-A web and mobile platform for field research data. I contributed across interfaces, backend, and databases, supporting surveys, team permissions, geolocation, and offline synchronization. Used in real field operations with **20,000+ surveys** and **316 field observers**.
+A web and mobile platform for field research data. I contributed across interfaces, backend, and databases, supporting surveys, team permissions, geolocation, and offline synchronization. It has been used in field operations with **20,000+ surveys** and **316 field observers**.
 
 **NestJS · PostgreSQL · Flutter**
 
@@ -44,17 +44,15 @@ A web and mobile platform for field research data. I contributed across interfac
 
 Start with the problem and the people using the product. Shape a clear experience, connect it to a reliable implementation, test the important flows, and keep improving after launch.
 
-## The portfolio itself
+## The portfolio
 
 Built with **semantic HTML, responsive CSS, and vanilla JavaScript**. No framework, build step, or production package installation is required.
 
-- **Arabic / English:** complete language switching with RTL / LTR support and saved preferences.
-- **Responsive:** balanced layouts across mobile, tablet, and desktop.
-- **Accessible:** skip link, visible keyboard focus, descriptive labels, and readable content without JavaScript.
-- **Interactive Saden gallery:** thumbnails, an enlarged viewer, detail zoom, keyboard controls, and touch swipes.
-- **Reduced-motion support:** optional motion respects the browser preference; the contact identity card stays still.
-
-Project imagery is stored locally in optimized formats. The sharing image is reserved for link previews, while the contact section uses real, translated HTML text.
+- **Arabic / English:** language switching with RTL / LTR support and saved preferences.
+- **Responsive:** layouts for mobile, tablet, and desktop.
+- **Accessible:** skip link, visible keyboard focus, descriptive labels, and content that remains available without JavaScript.
+- **Interactive Saden gallery:** thumbnails, enlarged viewing, detail zoom, keyboard controls, and touch swipes.
+- **Reduced-motion support:** animations respect the visitor's motion preference.
 
 ## Run locally
 
@@ -64,16 +62,14 @@ With Python 3 installed, open a terminal in the repository root:
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open **http://127.0.0.1:8000/**. Keep the terminal running during the preview and press **Ctrl+C** to stop it. No credentials or environment variables are needed.
+Open **http://127.0.0.1:8000/**. No credentials or environment variables are needed.
 
-The site is hosted on **GitHub Pages**, using the `main` branch and repository root. Asset paths are relative and case-sensitive; `.nojekyll` keeps the static files as authored.
+The site is hosted on **GitHub Pages** from the `main` branch and repository root. `.nojekyll` keeps the static files as authored.
 
-## Let's connect
+## Connect
 
 [GitHub](https://github.com/ManalBafaraj) · [LinkedIn](https://www.linkedin.com/in/manal-bafaraj-799123264) · [Email](mailto:manalBafaraj@outlook.com)
 
 ---
 
 <p align="center"><em>Built with care. From idea to impact.</em></p>
-
-Portfolio content, identity, and project imagery belong to Manal Bafaraj. Please ask before reusing them.
