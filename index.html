@@ -33,10 +33,32 @@
   </title>
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <script>
+   try {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !sessionStorage.getItem('portfolio-intro-played')) {
+     sessionStorage.setItem('portfolio-intro-played', '1');
+     document.documentElement.classList.add('intro-pending');
+     window.setTimeout(() => document.documentElement.classList.remove('intro-pending', 'intro-running'), 3400);
+    }
+   } catch {}
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;family=Tajawal:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link as="font" crossorigin="" href="img/fonts/instrument-serif-regular.woff2" rel="preload" type="font/woff2"/>
   <link href="style.css" rel="stylesheet"/>
  </head>
  <body>
+  <div aria-hidden="true" class="intro-splash" id="introSplash">
+   <span class="intro-shadow"></span>
+   <span class="intro-ball"></span>
+   <svg class="intro-logo" focusable="false" viewBox="0 0 64 64">
+    <path class="intro-logo-piece intro-piece-1" fill="#3C1D55" d="M31 8H18C11.93 8 7 12.93 7 19v12h10c7.73 0 14-6.27 14-14V8Z"/>
+    <path class="intro-logo-piece intro-piece-2" fill="#C84C7A" d="M36 8h10.4L57 18.6V31h-9c-7.18 0-13-5.82-13-13V8h1Z"/>
+    <path class="intro-logo-piece intro-piece-3" fill="#6A3A91" d="M57 35v11c0 6.07-4.93 11-11 11H35v-9c0-7.18 5.82-13 13-13h9Z"/>
+    <path class="intro-logo-piece intro-piece-4" fill="#A875B5" d="M31 57H18C11.93 57 7 52.07 7 46V35h9c8.28 0 15 6.72 15 15v7Z"/>
+    <circle class="intro-logo-spark" cx="32" cy="32" r="3.15" fill="#EFBC63" opacity="0"/>
+   </svg>
+   <span class="intro-reveal"></span>
+  </div>
   <span aria-hidden="true" id="top"></span>
   <a class="skip-link" data-i18n="skip" href="#main">
    انتقل إلى المحتوى
@@ -51,14 +73,6 @@
       Manal Bafaraj
      </span>
     </a>
-    <button aria-controls="navPanel" aria-expanded="false" aria-label="افتح قائمة التنقل" class="nav-toggle" id="navToggle" type="button">
-     <span>
-     </span>
-     <span>
-     </span>
-     <span>
-     </span>
-    </button>
     <div class="nav-panel" id="navPanel">
      <a data-i18n="nav.about" href="#about">
       عنّي
@@ -78,18 +92,18 @@
      <a data-i18n="nav.contact" href="#contact">
       تواصل
      </a>
-     <button aria-label="التبديل إلى الإنجليزية" class="language-button" id="langToggle" type="button">
-      EN
-     </button>
     </div>
+     <div class="nav-actions">
+      <button aria-label="افتح قائمة التنقل" aria-controls="navPanel" aria-expanded="false" class="nav-toggle" id="navToggle" type="button">
+       <span></span><span></span><span></span>
+      </button>
+      <button aria-label="التبديل إلى الإنجليزية" class="language-button" id="langToggle" type="button">EN</button>
+     </div>
    </nav>
   </header>
   <main id="main" tabindex="-1">
    <section aria-labelledby="heroTitle" class="hero section-grid">
     <div class="hero-copy">
-     <p class="notebook-title" data-i18n="notebook.title">
-      دفتر بناء المنتجات
-     </p>
      <p class="hero-hello" data-motion-repeat>
       <span data-i18n="hero.hello">مرحبًا، أنا منال</span>
       <svg aria-hidden="true" class="welcome-hand" focusable="false" viewBox="0 0 32 34" fill="none">
@@ -100,12 +114,9 @@
      <p class="eyebrow" data-i18n="hero.eyebrow">
       مهندسة برمجيات Full‑Stack
      </p>
-     <h1 id="heroTitle">
-      <span data-i18n="hero.titleBefore">أبني منتجات رقمية واضحة، من </span><span class="idea-highlight" data-motion-once><span data-i18n="hero.idea">الفكرة</span><svg aria-hidden="true" class="idea-underline" focusable="false" viewBox="0 0 170 12" preserveAspectRatio="none"><path class="idea-underline-path" d="M3 8C37 3 69 10 103 6S145 4 167 7"/></svg></span><span data-i18n="hero.titleAfter"> إلى الإطلاق.</span>
+      <h1 id="heroTitle">
+       <span data-i18n="hero.titleBefore">أطوّر منتجات رقمية،</span><br/><span class="idea-highlight" data-motion-once><span data-i18n="hero.titleHighlight">من الفكرة إلى الإطلاق.</span><svg aria-hidden="true" class="idea-underline" focusable="false" viewBox="0 0 170 12" preserveAspectRatio="none"><path class="idea-underline-path" d="M3 8C37 3 69 10 103 6S145 4 167 7"/></svg></span>
      </h1>
-     <p class="hero-lead" data-i18n="hero.lead">
-      أجمع بين تطوير الواجهات والـBackend وتصميم تجربة المستخدم لبناء منتجات متكاملة وسهلة الاستخدام.
-     </p>
      <div class="hero-actions">
       <a class="button primary" data-i18n="hero.primary" href="#featured">استعرض أعمالي</a>
       <a class="button secondary" data-i18n="hero.secondary" href="#contact">
@@ -147,10 +158,7 @@
      </span>
     </div>
    </section>
-   <div class="notebook-process">
-    <span class="process-label" data-i18n="notebook.note">
-     ملاحظات من التصميم إلى التنفيذ
-    </span>
+    <div class="notebook-process">
     <ol>
      <li>
       <span aria-hidden="true" class="process-index">
@@ -189,10 +197,9 @@
       <svg aria-hidden="true" class="about-ornament about-ornament-star-two" focusable="false" viewBox="0 0 14 12"><path pathLength="1" d="M7 1C7.7 4 8.7 5.2 12 6C8.7 6.7 7.7 8 7 11C6.3 8 5.3 6.7 2 6C5.3 5.2 6.3 4 7 1Z"/></svg>
       <svg aria-hidden="true" class="about-ornament about-ornament-swoop" focusable="false" viewBox="0 0 36 8"><path pathLength="1" d="M1 5C10 1 24 8 35 3"/></svg>
      </div>
-     <h2 id="aboutTitle"><span data-i18n="about.titleBefore">أفهم المشكلة، ثم أبني </span><span class="heading-highlight" data-i18n="about.titleHighlight">الحل</span><span data-i18n="about.titleAfter">.</span></h2>
+      <h2 id="aboutTitle"><span data-i18n="about.titleBefore">أفهم، أصمّم، </span><span class="heading-highlight" data-i18n="about.titleHighlight">وأبني</span><span data-i18n="about.titleAfter">.</span></h2>
     </div>
     <div class="about-layout reveal">
-     <p data-i18n="about.body">أحوّل احتياجات المستخدمين إلى تجارب واضحة، وأبني منتجات سهلة الاستخدام وقابلة للتطوير.</p>
      <div aria-label="Product-building sketches" class="about-sketches" data-i18n-aria="about.sketches" data-motion-repeat>
       <article class="about-sketch">
        <h3 data-i18n="about.p1Title">فهم الاحتياج</h3>

@@ -14,11 +14,11 @@
 
 <p dir="rtl">أنا منال بافرج، مهندسة برمجيات Full‑Stack. أفهم المشكلة، أنظّم الفكرة، ثم أبني منتجًا متكاملًا وسهل الاستخدام. أبني بعناية، من الفكرة إلى الأثر.</p>
 
-I'm a **Full-Stack Software Engineer** building useful digital products from idea to launch. My work connects frontend, backend, and UI/UX through a thoughtful, practical approach to product development.
+I'm a **Full-Stack Software Engineer** building digital products from idea to launch. I combine engineering and design to make intuitive products.
 
-This **Product Building Notebook** brings together selected projects, development notes, and a technical toolkit organized around the work of building a product—from design and interfaces to connected systems, data, testing, and delivery.
+This portfolio presents selected projects and experience, along with the tools and process behind the work.
 
-![Current Technical Toolkit section from Manal Bafaraj's Product Building Portfolio](img/portfolio-preview.webp)
+![Manal Bafaraj's portfolio homepage](img/portfolio-preview.webp)
 
 ## Featured work
 
